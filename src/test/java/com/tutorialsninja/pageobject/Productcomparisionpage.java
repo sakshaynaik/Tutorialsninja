@@ -1,13 +1,16 @@
 package com.tutorialsninja.pageobject;
 
 import java.util.List;
+import java.util.Random;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.utilities.ElementUtils;
+import com.tutorialsninja.utilities.ReadJavascriptExecutor;
 
 public class Productcomparisionpage {
 
@@ -50,6 +53,9 @@ public class Productcomparisionpage {
 
 	@FindBy(linkText = "iPhone")
 	private WebElement ipadimg;
+	
+	@FindBy(linkText = "shopping cart")
+	private WebElement shopcartlink;
 
 	@FindBy(xpath = "//*[@id='content']/table/tbody[2]/tr/td[3]/input")
 	private WebElement ipadaddtocart;
@@ -57,13 +63,28 @@ public class Productcomparisionpage {
 	@FindBy(xpath = "//div[contains(text(),'Success: You have modified')]")
 	private WebElement modifiedmsg;
 
+	@FindBy(xpath = "//div[1][contains(.,'to your shopping cart!')]")
+	private WebElement shopcartmsg;
+
 	@FindBy(xpath = "//*[@id='content']/p")
 	private WebElement nonchosemsg;
 
 	@FindBy(xpath = "//div[@id='content']//table[@class='table table-bordered']//tbody[1]/tr[1]/td/a")
 	private List<WebElement> listprdtfrmpage;
 
+	@FindBy(xpath = "//ul[@class='breadcrumb']/li/a")
+	private List<WebElement> bedcrumlink;
+
 	///////////////////////////////////////////////////////////////////////////
+
+	public void clickOnRandomBreadcrumLink() {
+
+		Random random = new Random();
+		int num = random.nextInt(bedcrumlink.size());
+
+		WebElement link = ldriver.findElement(By.xpath("//ul[@class='breadcrumb']/li[" + (num + 1) + "]/a"));
+		ReadJavascriptExecutor.clickElementByJavaScript(link, ldriver);
+	}
 
 	public boolean isDisplayedDynamicProductNameLink(String text) {
 
@@ -73,12 +94,17 @@ public class Productcomparisionpage {
 	public void clickDynamicProductNameLink(String text) {
 
 		element.clickOnDynamicElement(listprdtfrmpage, text);
-		
+
 	}
 
 	public String getMsgProductNotChoosen() {
 
 		return (nonchosemsg.getText());
+	}
+	
+	public void clickOnShoppingCartLinkFromMsg() {
+
+		ReadJavascriptExecutor.clickElementByJavaScript(shopcartlink, ldriver);
 	}
 
 	public boolean isDisplyedMsgProductNotChoosen() {
@@ -89,6 +115,16 @@ public class Productcomparisionpage {
 	public String getMsgForProductCompareModified() {
 
 		return (modifiedmsg.getText());
+	}
+
+	public String getMsgForShoppingCart() {
+
+		return (shopcartmsg.getText());
+	}
+
+	public boolean isDisplyedMsgForShoppingCart() {
+
+		return (shopcartmsg.isDisplayed());
 	}
 
 	public boolean isDisplyedMsgForProductCompareModified() {

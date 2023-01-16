@@ -82,7 +82,7 @@ When  User enter URL and click on myaccount dropmenu
 Then  Login option should display in myaccount dropmenu
 And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page and forgotten password link should displayed
-And   User click on forgotten password link from login page
+When  User click on forgotten password link from login page
 Then  User should be taken to forgotten password page
 
 
@@ -108,7 +108,7 @@ Then  User should be taken to account login page
 When  User enter email field as "kishore8@gmail.com" and password field as "12345"
 And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
-And   User click on browser back button
+When  User click on browser back button
 Then  User should not get logged out from the application
 
 

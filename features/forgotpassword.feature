@@ -10,7 +10,7 @@ When  User enter URL and click on myaccount dropmenu
 Then  Login option should display in myaccount dropmenu
 And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
-And   User click on forgotten password link from login page
+When  User click on forgotten password link from login page
 Then  User should be taken to forgotten password page
 When  User enter email address of an existing account "kishore8@gmail.com" for which password is forgotten
 And   User click on continue button from forgot password page
@@ -24,7 +24,7 @@ When  User enter URL and click on myaccount dropmenu
 Then  Login option should display in myaccount dropmenu
 And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
-And   User click on forgotten password link from login page
+When  User click on forgotten password link from login page
 Then  User should be taken to forgotten password page
 When  User enter email address "zxy@gmail.com" for which account doesnot exist in appliction
 And   User click on continue button from forgot password page
@@ -39,7 +39,7 @@ And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
 When  User click on forgotten password link from login page
 Then  User should be taken to forgotten password page
-And   User click on continue button from forgot password page
+When  User click on continue button from forgot password page
 Then  Warn message for email address not found should display
 
 
@@ -49,7 +49,7 @@ When  User enter URL and click on myaccount dropmenu
 Then  Login option should display in myaccount dropmenu
 And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
-And   User click on forgotten password link from login page
+When  User click on forgotten password link from login page
 Then  User should be taken to forgotten password page
 Then  Proper placeholder text should be displayed inside emailaddress textfield
 
@@ -62,7 +62,7 @@ And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
 When  User click on forgotten password link from login page
 Then  User should be taken to forgotten password page
-And   User enter invalid email "<email@gmail>" into emailaddress textfield
+When  User enter invalid email "<email@gmail>" into emailaddress textfield
 And   User click on continue button from forgot password page
 Then  Warn message for email address not found should display 
 Examples:
@@ -80,7 +80,7 @@ And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
 When  User click on forgotten password link from login page
 Then  User should be taken to forgotten password page
-And   User click on back button of forgotten password page
+When  User click on back button of forgotten password page
 Then  User should be taken to account login page
 
 

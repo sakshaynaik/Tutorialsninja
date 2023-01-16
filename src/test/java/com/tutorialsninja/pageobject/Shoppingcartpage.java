@@ -43,7 +43,7 @@ public class Shoppingcartpage {
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement updatebutton;
 
-	@FindBy(xpath = "//div[contains(text(),'Success: You have modified your shopping cart!')]")
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement modifiedmsg;
 
 	@FindBy(xpath = "//*[@id='content']/p")

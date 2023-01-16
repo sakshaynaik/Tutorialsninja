@@ -261,26 +261,27 @@ public class TC005_SearchTest extends BaseClass {
 		searchpage.clickOnAddToWhishlistButton();
 	}
 
-	@Then("Proper success message for {string} should be displayed")
-	public void proper_success_message_for_should_be_displayed(String string) {
+	@Then("Success message for'Product Added To Wishlist'should be displayed in product display page")
+	public void Success_message_for_Product_Added_To_Wishlist_should_be_displayed_in_product_display_page() {
 
 		searchpage = new Searchpage(driver);
 		Assert.assertTrue(searchpage.getTextProductCompareMessage()
 				.contains("Success: You have added"));
 	}
 
-	@Then("User click on wishlist link from the success message")
-	public void user_click_on_wishlist_link_from_the_success_message() {
+	@Then("User click on wishlist link from the success message of product display page")
+	public void user_click_on_wishlist_link_from_the_success_message_of_product_display_page() {
 
 		searchpage = new Searchpage(driver);
 		searchpage.clickOnWishListLink();
 	}
 
-	@Then("User should be taken to wishlist page and product should be displayed")
-	public void user_should_be_taken_to_wishlist_page_and_product_should_be_displayed() {
+	@Then("User should be taken to wishlist page and product {string} should be displayed")
+	public void user_should_be_taken_to_wishlist_page_and_product_should_be_displayed(String prdt) {
 
 		wishlistpage = new Wishlistpage(driver);
 		Assert.assertEquals(wishlistpage.getWishListPageTitle(), config.getWishlistPageTitle());
+		Assert.assertTrue(wishlistpage.isDisplayedDynamicProductNameLink(prdt));
 	}
 
 	@Then("User will click on random product {string} link from search results page")

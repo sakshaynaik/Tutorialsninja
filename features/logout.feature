@@ -16,7 +16,7 @@ And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 When  User click on myaccont drop menu and select logout option
 Then  User should be taken to account logout page and login option should display in myaccount dropmenu
-And   User click on continue button from account logout page
+When  User click on continue button from account logout page
 Then  User should be taken to homepage
 
 
@@ -32,7 +32,7 @@ And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 When  User click on logout option from the right column
 Then  User should be taken to account logout page and login option should display in right options column
-And   User click on continue button from account logout page
+When  User click on continue button from account logout page
 Then  User should be taken to homepage
 
 
@@ -47,7 +47,7 @@ And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 When  User click on logout option from the right column
 Then  User should be taken to account logout page and login option should display in right options column
-And   User click on browser back button
+When  User click on browser back button
 Then  User should not get logged-in 
 
 

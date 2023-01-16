@@ -1,4 +1,4 @@
-@all
+
 
 Feature: Product Display Functionality
 Validate the working of product display functionality
@@ -31,7 +31,7 @@ Given User launchs chrome browser
 When  User enter existing product name "iMac" into search textfield
 And   User click on the button having search icon 
 Then  Searched product "iMac" should be displayed in the search results page
-And   User click on "iMac" link of product from search results page  
+When  User click on "iMac" link of product from search results page  
 Then  User should be taken to product dispaly page of the product
 Then  User should verify product name, brand name and product code dispalyed on product display page
 
@@ -44,7 +44,7 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User click on "iMac" link of product from search results page 
 Then  User should be taken to product dispaly page of the product
-And   User will update quantity in qty textfield by providing a "-1" value and click on addtocart button
+When  User will update quantity in qty textfield by providing a "-1" value and click on addtocart button
 Then  A field level warn message'Quantity should be a positive number'should display on product display page
 
 
@@ -54,11 +54,11 @@ Given User launchs chrome browser
 When  User enter existing product name "iMac" into search textfield
 And   User click on the button having search icon 
 Then  Searched product "iMac" should be displayed in the search results page
-And   User click on "iMac" link of product from search results page 
+When  User click on "iMac" link of product from search results page 
 Then  User should be taken to product dispaly page of the product
 And   User click on reviews tab of product in the displayed product display page
 Then  Review tab should be opened in product display page
-And   User enter "your name" textfield and "your review" textfield and select radio button for ratings
+When  User enter "your name" textfield and "your review" textfield and select radio button for ratings
 And   User click on continue button of review from product display page 
 Then  Success message with text 'Thank you for your review' should be displayed on product display page 
 
@@ -71,9 +71,9 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User click on "iMac" link of product from search results page  
 Then  User should be taken to product dispaly page of the product
-And   User click on reviews tab of product in the displayed product display page
+When  User click on reviews tab of product in the displayed product display page
 Then  Review tab should be opened in product display page
-And   User will not enter any review text fields from product display page 
+When  User will not enter any review text fields from product display page 
 And   User click on continue button of review from product display page 
 Then  Proper message of 'There are no reviews for this product' should display on product display page  
 
@@ -85,7 +85,7 @@ When  User enter URL and click on myaccount dropmenu
 Then  Login option should display in myaccount dropmenu
 And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
-And   User enter email field as "kishore8@gmail.com" and password field as "12345"
+When  User enter email field as "kishore8@gmail.com" and password field as "12345"
 And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 When  User enter existing product name "iMac" into search textfield
@@ -93,10 +93,10 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User click on "iMac" link of product from search results page 
 Then  User should be taken to product dispaly page of the product  
-And   User click on the wishlist button of product from product dispaly page 
-Then  Proper success message for 'Product Added To Wishlist' should be displayed
-And   User click on wishlist link from the success message
-Then  User should be taken to wishlist page and product should be displayed
+When  User click on the wishlist button of product from product dispaly page 
+Then  Success message for'Product Added To Wishlist'should be displayed in product display page
+When  User click on wishlist link from the success message of product display page
+Then  User should be taken to wishlist page and product "iMac" should be displayed
 
 
 
@@ -107,9 +107,9 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User click on "iMac" link of product from search results page 
 Then  User should be taken to product dispaly page of the product
-And   User click on the product compare button of product from product display page
+When  User click on the product compare button of product from product display page
 Then  Success message of'Product Added To Product Comparision'should displayed in product display page
-And   User click on product comparision link from the success message
+When  User click on product comparision link from the success message
 Then  User should be taken to product comparision page  
 
 
@@ -120,7 +120,7 @@ When  User enter URL and click on myaccount dropmenu
 Then  Login option should display in myaccount dropmenu
 And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
-And   User enter email field as "kishore8@gmail.com" and password field as "12345"
+When  User enter email field as "kishore8@gmail.com" and password field as "12345"
 And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 When  User enter existing product name "iMac" into search textfield
@@ -129,10 +129,10 @@ Then  Searched product "iMac" should be displayed in the search results page
 And   User click on "iMac" link of product from search results page 
 Then  User should be taken to product dispaly page of the product  
 And   User click on the wishlist button of product from product dispaly page 
-Then  Proper success message for 'Product Added To Wishlist' should be displayed
-And   User click on wishlist link from the success message
-Then  User should be taken to wishlist page and product should be displayed
-And   User click on the product "iMac" link from wishlist page
+Then  Success message for'Product Added To Wishlist'should be displayed in product display page
+When  User click on wishlist link from the success message of product display page
+Then  User should be taken to wishlist page and product "iMac" should be displayed
+When  User click on the product "iMac" link from wishlist page
 Then  User should be taken to product dispaly page of the product
 
 
@@ -144,11 +144,11 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User click on "iMac" link of product from search results page 
 Then  User should be taken to product dispaly page of the product
-And   User click on the product compare button of product from product display page 
+When  User click on the product compare button of product from product display page 
 Then  Success message of'Product Added To Product Comparision'should displayed in product display page
 And   User click on product comparision link from the success message
 Then  User should be taken to product comparision page 
-And   User click on the product "iMac" link from product compare page
+When  User click on the product "iMac" link from product compare page
 Then  User should be taken to product dispaly page of the product
 
 

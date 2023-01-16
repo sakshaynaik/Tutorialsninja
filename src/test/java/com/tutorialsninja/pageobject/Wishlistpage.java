@@ -2,12 +2,14 @@ package com.tutorialsninja.pageobject;
 
 import java.util.List;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.utilities.ElementUtils;
+import com.tutorialsninja.utilities.ReadJavascriptExecutor;
 
 public class Wishlistpage {
 
@@ -41,6 +43,9 @@ public class Wishlistpage {
 
 	@FindBy(linkText = "iMac")
 	private WebElement iMaclink;
+	
+	@FindBy(linkText = "shopping cart")
+	private WebElement shopcartmsglink;
 
 	@FindBy(xpath = "//body[1]/div[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]")
 	private WebElement iphoneimg;
@@ -74,6 +79,16 @@ public class Wishlistpage {
 
 		return (emptytxtonwishlst.isDisplayed());
 
+	}
+	
+	public Shoppingcartpage clickOnShopCartMsgLink() {
+
+		try {
+			ReadJavascriptExecutor.clickElementByJavaScript(shopcartmsglink, ldriver);
+		} catch (StaleElementReferenceException e) {
+			ReadJavascriptExecutor.clickElementByJavaScript(shopcartmsglink, ldriver);
+		}
+		return (new Shoppingcartpage(ldriver));
 	}
 
 	public boolean isDisplayedOniPhoneImg() {

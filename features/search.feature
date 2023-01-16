@@ -35,7 +35,7 @@ When  User enter URL and click on myaccount dropmenu
 Then  Login option should display in myaccount dropmenu
 And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
-And   User enter email field as "kishore8@gmail.com" and password field as "12345"
+When  User enter email field as "kishore8@gmail.com" and password field as "12345"
 And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 When  User enter existing product name "iMac" into search textfield
@@ -121,7 +121,7 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User select list option from search results page
 Then  Single product "iMac" should be displayed in list view 
-And   User click on "iMac" link of product from search results page 
+When  User click on "iMac" link of product from search results page 
 Then  User should be taken to product dispaly page of the product
 
 
@@ -133,7 +133,7 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User select grid option from search results page
 Then  Single product "iMac" should be displayed in grid view
-And   User click on "iMac" link of product from search results page 
+When  User click on "iMac" link of product from search results page 
 Then  User should be taken to product dispaly page of the product
 
 
@@ -144,7 +144,7 @@ And   User click on the button having search icon
 Then  More than one product should be displayed in search results page
 And   User select list option from search results page
 Then  Multiple product should be displayed in list view 
-And   User click on the "iMac" product name from search results page 
+When  User click on the "iMac" product name from search results page 
 Then  User should be taken to product dispaly page of the product
 
 
@@ -156,7 +156,7 @@ And   User click on the button having search icon
 Then  More than one product should be displayed in search results page
 And   User select grid option from search results page
 Then  Multiple product should be displayed in grid view
-And   User click on the "iMac" product name from search results page 
+When  User click on the "iMac" product name from search results page 
 Then  User should be taken to product dispaly page of the product
 
 
@@ -168,7 +168,7 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User click on the product compare button of product from search results page 
 Then  Success messsage of'Product Added To Product Comparision'should displayed in search results page
-And   User click on product comparision link from the success message
+When  User click on product comparision link from the success message
 Then  User should be taken to product comparision page   
 
 
@@ -178,16 +178,16 @@ When  User enter URL and click on myaccount dropmenu
 Then  Login option should display in myaccount dropmenu
 And   User click on login option from myaccount dropmenu
 Then  User should be taken to account login page
-And   User enter email field as "kishore8@gmail.com" and password field as "12345"
+When  User enter email field as "kishore8@gmail.com" and password field as "12345"
 And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 When  User enter existing product name "iMac" into search textfield
 And   User click on the button having search icon 
 Then  Searched product "iMac" should be displayed in the search results page
 And   User click on the wishlist button of product from search results page 
-Then  Proper success message for 'Product Added To Wishlist' should be displayed
-And   User click on wishlist link from the success message
-Then  User should be taken to wishlist page and product should be displayed
+Then  Success message for'Product Added To Wishlist'should be displayed in product display page
+When  User click on wishlist link from the success message of product display page
+Then  User should be taken to wishlist page and product "iMac" should be displayed
 
 
 

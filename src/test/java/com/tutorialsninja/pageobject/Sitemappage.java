@@ -34,8 +34,17 @@ public class Sitemappage {
 
 	@FindBy(linkText = "Special Offers")
 	private WebElement specialoffer;
+	
+	@FindBy(linkText = "Shopping Cart")
+	private WebElement shopacrtlink;
 
 	///////////////////////////////////////////////////////
+	
+	public Shoppingcartpage clickOnShoppingcartLink() {
+
+		shopacrtlink.click();
+		return (new Shoppingcartpage(ldriver));
+	}
 
 	public Specialofferspage clickOnSpecialOffersLink() {
 

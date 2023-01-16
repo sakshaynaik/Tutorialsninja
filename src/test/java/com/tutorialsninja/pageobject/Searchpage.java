@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -83,6 +84,15 @@ public class Searchpage {
 
 	@FindBy(id = "compare-total")
 	private WebElement compareprdlink;
+	
+	@FindBy(linkText = "iMac")
+	private WebElement productlinkimac;
+	
+	@FindBy(linkText = "HP LP3065")
+	private WebElement productlinkhplp;
+	
+	@FindBy(linkText = "shopping cart")
+	private WebElement shopcartmsglink;
 
 	@FindBy(id = "input-sort")
 	private WebElement sortby;
@@ -142,6 +152,22 @@ public class Searchpage {
 		ReadJavascriptExecutor.clickElementByJavaScript(compareprdlink_1, ldriver);
 		return (new Productcomparisionpage(ldriver));
 	}
+	
+	public void keyBoardActionForSelecting(String txt) {
+
+		Actions action = new Actions(ldriver);
+		action.click(searchcrteria).sendKeys(txt).sendKeys(Keys.TAB).sendKeys(Keys.SPACE).sendKeys(Keys.TAB, Keys.TAB)
+				.sendKeys(Keys.TAB, Keys.TAB).sendKeys(Keys.ENTER).build().perform();
+	}
+
+	public Productpage clickOnRandomImg(int num) {
+
+		WebElement img = ldriver
+				.findElement(By.xpath("//div[@class='row']/div[contains(@class,'product-layout product-grid col-lg-3')]"
+						+ "[" + (num + 1) + "]//div[@class='image']"));
+		img.click();
+		return (new Productpage(ldriver));
+	}
 
 	public String getTextProductCompareMessage() {
 
@@ -170,7 +196,18 @@ public class Searchpage {
 	public boolean isDisplayediPhoneImg() {
 
 		return (iphoneImg.isDisplayed());
+	}
+	
+	public Productpage clickOnProductNameFromSuccessMsgHPLP() {
 
+		productlinkhplp.click();
+		return (new Productpage(ldriver));
+	}
+	
+	public Productpage clickOnProductNameFromSuccessMsgiMac() {
+
+		productlinkimac.click();
+		return (new Productpage(ldriver));
 	}
 
 	public Productcomparisionpage clickOnProductCompareLink_0() {
@@ -178,21 +215,15 @@ public class Searchpage {
 		prdlinktext.click();
 		return (new Productcomparisionpage(ldriver));
 	}
+	
+	public Shoppingcartpage clickOnShopCartMsgLink() {
 
-	public void keyBoardActionForSelecting(String txt) {
-
-		Actions action = new Actions(ldriver);
-		action.click(searchcrteria).sendKeys(txt).sendKeys(Keys.TAB).sendKeys(Keys.SPACE).sendKeys(Keys.TAB, Keys.TAB)
-				.sendKeys(Keys.TAB, Keys.TAB).sendKeys(Keys.ENTER).build().perform();
-	}
-
-	public Productpage clickOnRandomImg(int num) {
-
-		WebElement img = ldriver
-				.findElement(By.xpath("//div[@class='row']/div[contains(@class,'product-layout product-grid col-lg-3')]"
-						+ "[" + (num + 1) + "]//div[@class='image']"));
-		img.click();
-		return (new Productpage(ldriver));
+		try {
+			ReadJavascriptExecutor.clickElementByJavaScript(shopcartmsglink, ldriver);
+		} catch (StaleElementReferenceException e) {
+			ReadJavascriptExecutor.clickElementByJavaScript(shopcartmsglink, ldriver);
+		}
+		return (new Shoppingcartpage(ldriver));
 	}
 
 	public int getSizeOfImg() {

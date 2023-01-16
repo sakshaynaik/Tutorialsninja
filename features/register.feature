@@ -20,7 +20,7 @@ When  User enters below details into textfields
 |confrmpasswrd	  |  12345                 |
 And   User select privacypolicy checkbox and click on continue button
 Then  User should get logged in and taken to account success page with account success message 
-And   User click on continue button that is dispalyed on account success page
+When   User click on continue button that is dispalyed on account success page
 Then  User should be taken to account page
 
 
@@ -40,7 +40,7 @@ When  User enters below details into textfields
 |confrmpasswrd	  |  12345                 |
 And   User clicks on yes radio option for newsletter selects privacypolicy checkbox and click on continue button
 Then  User should get logged in and taken to account success page with account success message 
-And   User click on continue button that is dispalyed on account success page
+When  User click on continue button that is dispalyed on account success page
 Then  User should be taken to account page
 
 
@@ -63,11 +63,11 @@ When  User enter URL and click on myaccount dropmenu
 Then  Register option should display in myaccount dropmenu
 And   User click on register option from myaccount dropmenu
 Then  User should be taken to register account page   
-And   User click on myaccount dropmenu and click on login option
+When  User click on myaccount dropmenu and click on login option
 Then  User should be taken to account login page   
 And   User click on continue button inside new customer box
 Then  User should be taken to register account page  
-And   User click on register link from right column options
+When  User click on register link from right column options
 Then  User should be taken to register account page  
 
 
@@ -159,7 +159,7 @@ When  User enters below details into textfields
 |confrmpasswrd	  |  12345                 |
 And   User select privacypolicy checkbox and click on continue button
 Then  User should get logged in and taken to account success page with account success message 
-And   User click on continue button that is dispalyed on account success page
+When  User click on continue button that is dispalyed on account success page
 Then  User should be taken to account page
 
 
@@ -170,7 +170,7 @@ When  User enter URL and click on myaccount dropmenu
 Then  Register option should display in myaccount dropmenu
 And   User click on register option from myaccount dropmenu
 Then  User should be taken to register account page  
-And   User select privacypolicy checkbox and click on continue button
+When  User select privacypolicy checkbox and click on continue button
 Then  A proper warning messages should be displayed for their respective textfields 
 
 

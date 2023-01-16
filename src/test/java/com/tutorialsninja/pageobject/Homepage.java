@@ -11,17 +11,20 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.tutorialsninja.utilities.ElementUtils;
 import com.tutorialsninja.utilities.ReadAction;
 import com.tutorialsninja.utilities.ReadJavascriptExecutor;
 
 public class Homepage {
 
 	WebDriver ldriver;
+	ElementUtils element;
 
 	public Homepage(WebDriver rdriver) {
 
 		ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);
+		element = new ElementUtils(rdriver);
 	}
 
 	@FindBy(id = "wishlist-total")
@@ -69,7 +72,7 @@ public class Homepage {
 	@FindBy(xpath = "//div[4]//div[1]//div[3]//button[3]")
 	private WebElement compareprdtbttn;
 
-	@FindBy(xpath = "//div[contains(text(), 'Success: You have added')]")
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement compareprdtmsg;
 
 	@FindBy(linkText = "product comparison")
@@ -140,8 +143,16 @@ public class Homepage {
 
 	@FindBy(xpath = "//footer//div[@class='row']/div[4]//li")
 	private List<WebElement> footermyaccountlink;
+	
+	@FindBy(xpath = "//div[@id='content']//div[@class='row']/div//h4/a")
+	private List<WebElement> dynamicprdtlink;
 
 	//////////////////////////////////////////////////////////////////
+	
+	public void clickOnDynamicProductLink(String txt) {
+
+		element.clickOnDynamicElement(dynamicprdtlink, txt);
+	}
 
 	public void clickOnRandomHeaderNavigationBarLink() {
 
@@ -226,7 +237,7 @@ public class Homepage {
 
 	public Shoppingcartpage clickOnShopCartHeaderLink() {
 
-		shopcartheaderlink.click();
+		ReadJavascriptExecutor.clickElementByJavaScript(shopcartheaderlink, ldriver);
 		return (new Shoppingcartpage(ldriver));
 	}
 
@@ -403,7 +414,7 @@ public class Homepage {
 
 	public Sitemappage clickOnSiteMap() {
 
-		sitemap.click();
+		ReadJavascriptExecutor.clickElementByJavaScript(sitemap, ldriver);
 		return (new Sitemappage(ldriver));
 	}
 
