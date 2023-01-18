@@ -968,3 +968,333 @@
 [INFO ] 2023-01-16 03:29:03.849 [main] BaseClass - User Has Launched Chrome Browser
 [INFO ] 2023-01-16 03:29:07.152 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
 [INFO ] 2023-01-16 16:13:20.820 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 19:53:29.676 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 19:53:30.693 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 19:53:31.024 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:46:49.842 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:47:07.175 [main] BaseClass - User Navigated To Product Page Title: iMac
+[INFO ] 2023-01-16 20:47:46.626 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:47:55.585 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 20:48:10.572 [main] BaseClass - New Tab For Account And Billing Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 20:48:12.058 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 20:48:13.346 [main] BaseClass - New Tab For Delivery Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 20:48:15.695 [main] BaseClass - New Tab For Payment Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 20:48:16.936 [main] BaseClass - New Tab For Confirm order Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 20:48:55.837 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:52:27.745 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:53:04.474 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:53:04.782 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:53:05.347 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:53:05.500 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:53:05.765 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:53:05.982 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:53:06.231 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 20:53:06.391 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:48:27.781 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:50:00.046 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:51:23.932 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:51:36.670 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 21:52:20.304 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:52:28.011 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 21:52:31.751 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:52:33.043 [main] BaseClass - New Tab For Delivery Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:52:34.254 [main] BaseClass - New Tab For Payment Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:52:35.488 [main] BaseClass - New Tab For Confirm order Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:52:47.453 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:52:54.118 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 21:53:00.901 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:53:02.192 [main] BaseClass - New Tab For Delivery Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:53:03.360 [main] BaseClass - New Tab For Payment Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:53:04.569 [main] BaseClass - New Tab For Confirm order Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:53:16.385 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:53:19.797 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 21:53:29.870 [main] BaseClass - New Tab For Delivery Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:53:47.430 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:53:50.906 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 21:54:03.103 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:54:22.629 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 21:54:26.033 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 21:54:31.335 [main] BaseClass - New Tab For Account And Billing Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:54:32.634 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:54:33.869 [main] BaseClass - New Tab For Delivery Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:54:35.174 [main] BaseClass - New Tab For Payment Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 21:54:36.368 [main] BaseClass - New Tab For Confirm order Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:04:31.756 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:04:53.263 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 22:05:32.294 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:05:39.180 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 22:05:57.690 [main] BaseClass - New Tab For Delivery Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:05:59.709 [main] BaseClass - New Tab For Payment Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:06:01.008 [main] BaseClass - New Tab For Confirm order Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:06:32.968 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:06:39.382 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 22:06:53.103 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:11:12.665 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:11:43.449 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 22:11:59.382 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:15:32.534 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:15:37.619 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 22:15:49.214 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:15:50.463 [main] BaseClass - New Tab For Delivery Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:15:51.600 [main] BaseClass - New Tab For Payment Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:15:52.784 [main] BaseClass - New Tab For Confirm order Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 22:41:30.056 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:41:30.968 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:41:31.158 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:41:31.308 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 22:41:31.494 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:00:51.819 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:01:23.607 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:01:57.031 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:02:21.113 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:05:42.473 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:05:58.787 [main] BaseClass - User Navigated To Product Page Title: HP LP3065
+[INFO ] 2023-01-16 23:06:04.008 [main] BaseClass - New Tab For Account And Billing Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 23:06:05.370 [main] BaseClass - New Tab For Delivery Details Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 23:06:06.666 [main] BaseClass - New Tab For Delivery Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 23:06:07.878 [main] BaseClass - New Tab For Payment Method Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 23:06:09.114 [main] BaseClass - New Tab For Confirm order Were Displayed In Checkoutpage
+[INFO ] 2023-01-16 23:06:24.928 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:06:39.637 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:06:51.910 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:07:05.395 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:08:43.901 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:09:25.940 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:10:29.301 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:11:48.456 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:12:21.229 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:13:57.896 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-16 23:14:48.482 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 22:51:36.119 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 22:51:36.783 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 22:51:37.062 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 22:51:37.289 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 22:51:37.495 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 22:51:37.752 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 22:51:38.120 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 23:53:54.252 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 23:54:40.710 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 23:55:02.120 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 23:55:28.887 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 23:55:42.347 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-17 23:56:09.544 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:11:20.052 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:11:57.192 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:12:25.593 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:12:51.781 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:23:36.430 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:23:54.635 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:24:19.666 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:24:44.590 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:28:38.582 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:29:06.797 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:29:28.896 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:29:53.833 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:31:24.800 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:31:35.393 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:31:46.120 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:32:37.823 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:33:05.736 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:33:49.380 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:34:15.404 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:36:08.641 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 00:36:41.054 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:12:32.399 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:12:33.021 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:12:33.177 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:12:33.552 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:12:33.718 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:12:34.081 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:12:34.217 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:47:47.529 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:48:28.294 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:48:59.791 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:49:25.594 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:49:41.316 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:49:56.565 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:50:06.514 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:52:33.140 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:52:53.920 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:53:08.885 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:53:22.433 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:53:44.496 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:53:56.635 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:54:09.856 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:55:09.516 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:55:19.807 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:55:42.507 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:55:54.823 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:57:15.779 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:58:24.622 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 01:59:48.226 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:00:02.253 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:03:16.299 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:05:01.564 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:07:34.503 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:08:47.109 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:09:00.268 [main] BaseClass - Warning: No match for E-Mail Address and/or Password.
+[INFO ] 2023-01-18 02:14:03.243 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:14:18.734 [main] BaseClass - Warning: No match for E-Mail Address and/or Password.
+[INFO ] 2023-01-18 02:18:02.590 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:18:16.157 [main] BaseClass - Warning: No match for E-Mail Address and/or Password.
+[INFO ] 2023-01-18 02:20:22.490 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:20:31.280 [main] BaseClass - Warning: No match for E-Mail Address and/or Password.
+[INFO ] 2023-01-18 02:20:37.666 [main] BaseClass - Warning: No match for E-Mail Address and/or Password.
+[INFO ] 2023-01-18 02:21:18.918 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 02:21:26.214 [main] BaseClass - Warning: No match for E-Mail Address and/or Password.
+[INFO ] 2023-01-18 02:21:32.510 [main] BaseClass - Warning: No match for E-Mail Address and/or Password.
+[INFO ] 2023-01-18 20:34:10.129 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:34:10.698 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:34:11.145 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:34:11.775 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:34:12.330 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:34:12.530 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:34:12.725 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:34:12.877 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:34:13.003 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:37.671 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:38.115 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:38.438 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:38.702 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:39.041 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:39.213 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:39.337 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:39.492 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 20:48:39.602 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:19:04.411 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:19:54.803 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:20:33.938 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:20:39.972 [main] BaseClass - User Shoud be taken to Edit Tab Of Address Book Page
+[INFO ] 2023-01-18 21:21:09.329 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:21:13.782 [main] BaseClass - User Shoud be taken to Edit Tab Of Address Book Page
+[INFO ] 2023-01-18 21:21:27.581 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:21:37.344 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:21:41.306 [main] BaseClass - User Is Taken To New Address Tab In Address Book Page
+[INFO ] 2023-01-18 21:21:51.660 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:22:10.953 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:23:53.962 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:24:04.451 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:24:14.135 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:24:33.185 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:24:37.588 [main] BaseClass - User Shoud be taken to Edit Tab Of Address Book Page
+[INFO ] 2023-01-18 21:24:51.578 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:24:55.503 [main] BaseClass - User Shoud be taken to Edit Tab Of Address Book Page
+[INFO ] 2023-01-18 21:25:56.652 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:26:09.035 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:26:13.014 [main] BaseClass - User Is Taken To New Address Tab In Address Book Page
+[INFO ] 2023-01-18 21:26:23.530 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:29:28.449 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:29:33.302 [main] BaseClass - User Is Taken To New Address Tab In Address Book Page
+[INFO ] 2023-01-18 21:29:59.441 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:38.947 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:39.500 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:39.725 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:40.139 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:40.298 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:40.448 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:40.589 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:40.775 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:34:40.872 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:40:20.658 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:40:27.368 [main] BaseClass - User Is Taken To New Address Tab In Address Book Page
+[INFO ] 2023-01-18 21:40:44.381 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:42:25.473 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:42:35.360 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:42:44.421 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:42:59.256 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:43:04.017 [main] BaseClass - User Shoud be taken to Edit Tab Of Address Book Page
+[INFO ] 2023-01-18 21:43:17.980 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:43:21.831 [main] BaseClass - User Shoud be taken to Edit Tab Of Address Book Page
+[INFO ] 2023-01-18 21:43:34.581 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:43:44.707 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:43:48.593 [main] BaseClass - User Is Taken To New Address Tab In Address Book Page
+[INFO ] 2023-01-18 21:44:01.914 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:44:11.934 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:45:44.157 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:45:44.689 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:45:44.869 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:45:45.019 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:45:45.178 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:45:45.351 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:58:24.303 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:58:37.197 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:58:47.756 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:58:59.687 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:59:03.817 [main] BaseClass - User Shoud be taken to Edit Tab Of Address Book Page
+[INFO ] 2023-01-18 21:59:17.592 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:59:21.536 [main] BaseClass - User Shoud be taken to Edit Tab Of Address Book Page
+[INFO ] 2023-01-18 21:59:34.766 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:59:44.736 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 21:59:48.696 [main] BaseClass - User Is Taken To New Address Tab In Address Book Page
+[INFO ] 2023-01-18 22:00:02.300 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:00:14.011 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:00:28.393 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:00:41.747 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:01:09.143 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:01:34.714 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:01:52.303 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:02:12.716 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:06:24.763 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:06:46.816 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:06:59.584 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:07:14.086 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:07:23.920 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:07:35.153 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:10:21.350 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:10:39.257 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:10:53.142 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:11:08.779 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:11:21.828 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:11:34.785 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:22:18.838 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:22:19.364 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:22:19.535 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:22:19.675 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:33:30.807 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:33:31.461 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:33:31.762 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:33:31.964 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:35:43.941 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:36:27.624 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:37:08.367 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:37:24.452 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 22:37:28.507 [main] BaseClass - Product Details: Order ID: #13146
+Date Added: 09/01/2023 Payment Method: Cash On Delivery
+Shipping Method: Flat Shipping Rate
+[INFO ] 2023-01-18 23:11:45.469 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:11:46.177 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:11:46.336 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:11:46.487 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:27:00.129 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:27:37.590 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:28:22.561 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:28:54.561 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:30:39.317 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:31:14.643 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:32:57.942 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:33:28.932 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:36:30.412 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:36:50.210 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:37:08.477 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-18 23:37:31.288 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:02:19.971 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:02:21.399 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:02:21.704 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:02:22.023 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:02:22.209 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:02:22.338 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:02:22.474 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:14:31.259 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:15:01.051 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:15:23.310 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:15:46.303 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:16:06.594 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:16:22.209 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:16:39.111 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:19:42.578 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:20:22.177 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:21:01.110 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:21:16.216 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:21:28.113 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:21:40.596 [main] BaseClass - User Has Launched Chrome Browser
+[INFO ] 2023-01-19 00:21:53.362 [main] BaseClass - User Has Launched Chrome Browser

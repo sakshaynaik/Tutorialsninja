@@ -18,7 +18,20 @@ public class PCpage {
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
 	private WebElement contbttn;
 
+	@FindBy(xpath = "//p[normalize-space()='There are no products to list in this category.']")
+	private WebElement pcpageemptytxt;
+	
 	///////////////////////////////////////////////////////////////
+	
+	public boolean isDisplayedPCPageEmptyMsg() {
+
+		return (pcpageemptytxt.isDisplayed());
+	}
+	
+	public String getPCPageEmptyMsg() {
+
+		return (pcpageemptytxt.getText());
+	}
 
 	public Homepage clickOnContinueButton() {
 

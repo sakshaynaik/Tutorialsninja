@@ -36,7 +36,7 @@ And   User click on the button having search icon
 Then  Searched product "iMac" should be displayed in the search results page
 And   User click on add to cart button of product from search results page 
 Then  Success message of'Product Added To Shopping cart'should display in search results page
-And   User click on sitemap link from footer option
+And   User click on sitemap link from footer section
 Then  User should be taken to sitemap page
 When  User click on shopping cart link from sitemap page
 Then  User should be taken to shoppingcart page and product "iMac" should be successfully displayed 

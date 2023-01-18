@@ -20,7 +20,16 @@ public class Accountlogoutpage {
 	@FindBy(linkText = "Continue")
 	private WebElement continebttn;
 
+	@FindBy(linkText = "Login")
+	private WebElement loginlink;
+
 	///////////////////////////////////////////////////////////////////////
+
+	public Loginpage clickOnLoginLink() {
+
+		ReadJavascriptExecutor.clickElementByJavaScript(loginlink, ldriver);
+		return (new Loginpage(ldriver));
+	}
 
 	public void refreshByJavascript() {
 

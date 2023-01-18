@@ -29,6 +29,9 @@ public class Myaccountinfopage {
 	@FindBy(id = "input-telephone")
 	private WebElement newtelephone;
 
+	@FindBy(xpath = "//a[normalize-space()='Back']")
+	private WebElement backbutton;
+
 	@FindBy(xpath = "//input[@value='Continue']")
 	private WebElement continuebttn;
 
@@ -71,6 +74,12 @@ public class Myaccountinfopage {
 	public boolean isDisplayedInvalidEmailMsg() {
 
 		return (emailinvaildmsg.isDisplayed());
+	}
+
+	public Accountpage clickOnBackButton() {
+
+		backbutton.click();
+		return (new Accountpage(ldriver));
 	}
 
 	public String getTextInvalidEmailMsg() {

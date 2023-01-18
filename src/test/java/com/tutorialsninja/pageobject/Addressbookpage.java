@@ -22,6 +22,9 @@ public class Addressbookpage {
 	@FindBy(xpath = "//*[@id='content']/div[1]/table/tbody/tr[1]/td[2]/a[2]")
 	private WebElement deletebttn;
 
+	@FindBy(xpath = "//tbody/tr[2]/td[2]/a[2]")
+	private WebElement deletenewaddress;
+	
 	@FindBy(linkText = "Edit")
 	private WebElement editbttn;
 
@@ -70,7 +73,7 @@ public class Addressbookpage {
 	@FindBy(xpath = "//input[@value='Continue']")
 	private WebElement continuebttn;
 
-	@FindBy(xpath = "//div[text()=' Your address has been successfully updated']")
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement addressupdtesuccmsg;
 	
 	@FindBy(xpath = "//div[text()=' Your address has been successfully deleted']")
@@ -191,8 +194,13 @@ public class Addressbookpage {
 
 		newadresbtn.click();
 	}
+	
+	public void clickOnNewAddressDeleteButton() {
 
-	public void clickOnDeleteButton() {
+		ReadAction.JSClick(ldriver, deletenewaddress);
+	}
+
+	public void clickOnDefaltAddressDeleteButton() {
 
 		ReadAction.JSClick(ldriver, deletebttn);
 	}

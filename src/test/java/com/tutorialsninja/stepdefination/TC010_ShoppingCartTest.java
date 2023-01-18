@@ -24,8 +24,8 @@ public class TC010_ShoppingCartTest extends BaseClass {
 		homepage.clickOnShopCartHeaderLink();
 	}
 
-	@Then("User click on sitemap link from footer option")
-	public void user_click_on_sitemap_link_from_footer_option() {
+	@Then("User click on sitemap link from footer section")
+	public void user_click_on_sitemap_link_from_footer_section() {
 
 		homepage = new Homepage(driver);
 		homepage.clickOnSiteMap();

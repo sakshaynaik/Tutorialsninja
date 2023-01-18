@@ -1,21 +1,26 @@
 package com.tutorialsninja.pageobject;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.tutorialsninja.utilities.ElementUtils;
 import com.tutorialsninja.utilities.ReadAction;
 import com.tutorialsninja.utilities.ReadJavascriptExecutor;
 
 public class Accountpage {
 
 	WebDriver ldriver;
+	ElementUtils element;
 
 	public Accountpage(WebDriver rdriver) {
 
 		ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);
+		element = new ElementUtils(rdriver);
 	}
 
 	@FindBy(linkText = "Edit your account information")
@@ -23,6 +28,9 @@ public class Accountpage {
 
 	@FindBy(linkText = "Account")
 	private WebElement accont;
+
+	@FindBy(linkText = "My Account")
+	private WebElement myaccountlink;
 
 	@FindBy(xpath = "//a[@title='My Account']")
 	private WebElement myaccount;
@@ -81,7 +89,33 @@ public class Accountpage {
 	@FindBy(xpath = "//div[contains(text(),'Success: Your newsletter subscription has been successfully updated!')]")
 	private WebElement newlttersuccessmsg;
 
+	@FindBy(xpath = "//div[@class='list-group']/a")
+	private List<WebElement> rightcolumnoptions;
+
+	@FindBy(xpath = "//div[@id='content']//a")
+	private List<WebElement> alltheofaccntlinks;
+	
 	///////////////////////////////////////////
+	
+	public boolean isDisplayedDynamicLinksOnAccontPage(String txt) {
+
+		return (element.isDisplayedDynamicElement(alltheofaccntlinks, txt));
+	}
+
+	public void clickOnDynamicLinksOnAccountPage(String txt) {
+
+		element.clickOnDynamicElement(alltheofaccntlinks, txt);
+	}
+	
+	public boolean isDisplayedDynamicRightColumnOptions(String txt) {
+
+		return (element.isDisplayedDynamicElement(rightcolumnoptions, txt));
+	}
+
+	public void clickOnDynamicRightColumnOptions(String txt) {
+
+		element.clickOnDynamicElement(rightcolumnoptions, txt);
+	}
 
 	public NewsletterSubscriptionpage clickOnNewsLetterLinkRightOption() {
 
@@ -258,6 +292,12 @@ public class Accountpage {
 	public String getAccountPageTitle() {
 
 		return (ldriver.getTitle());
+	}
+
+	public Accountpage clickOnMyAccountLinkFromDropMenu() {
+
+		myaccountlink.click();
+		return (new Accountpage(ldriver));
 	}
 
 	public void clickOnMyAccountDropMenu() {

@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.Select;
 import com.tutorialsninja.utilities.ReadAction;
 import com.tutorialsninja.utilities.ReadJavascriptExecutor;
 
-
 public class Checkoutpage {
 
 	WebDriver ldriver;
@@ -99,7 +98,25 @@ public class Checkoutpage {
 	@FindBy(id = "button-register")
 	private WebElement continueregbttn;
 
+	@FindBy(xpath = "//label[normalize-space()='I want to use a new address']")
+	private WebElement newaddressbttn;
+
+	@FindBy(xpath = "//label[normalize-space()='I want to use an existing address']")
+	private WebElement existaddressbttn;
+
 	/////////////////////////////////////////////////////////////////////////////
+
+	public void clickOnAddressRadioButton(String txt) {
+
+		if (existaddressbttn.getText().contains(txt)) {
+
+			existaddressbttn.click();
+
+		} else if (newaddressbttn.getText().contains(txt)) {
+
+			newaddressbttn.click();
+		}
+	}
 
 	public void clickOnRegisterContinueButton() {
 
@@ -122,7 +139,7 @@ public class Checkoutpage {
 		password.sendKeys(pass);
 	}
 
-	public void enteConfirmPasswordInTextField(String conpass) {
+	public void enterConfirmPasswordInTextField(String conpass) {
 
 		conpassword.clear();
 		conpassword.sendKeys(conpass);

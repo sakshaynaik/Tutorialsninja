@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.tutorialsninja.utilities.ReadJavascriptExecutor;
+
 public class Changepasswordpage {
 
 	WebDriver ldriver;
@@ -20,6 +22,9 @@ public class Changepasswordpage {
 
 	@FindBy(id = "input-confirm")
 	private WebElement newpasswrd;
+	
+	@FindBy(linkText = "Back")
+	private WebElement backbutton;
 
 	@FindBy(xpath = "//input[@value='Continue']")
 	private WebElement confrmbttn;
@@ -28,6 +33,12 @@ public class Changepasswordpage {
 	private WebElement passinvalidmsg;
 	
 	/////////////////////////////////////////////////////////////////////////
+	
+	public Accountpage clickOnBackButton() {
+
+		ReadJavascriptExecutor.clickElementByJavaScript(backbutton, ldriver);
+		return (new Accountpage(ldriver));
+	}
 	
 	public String getInvalidPassMsg() {
 

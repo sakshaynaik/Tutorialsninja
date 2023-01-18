@@ -4,28 +4,6 @@ Feature: Product Display Functionality
 Validate the working of product display functionality
 
 
-Scenario: Validate the thumbnalis of the product displayed in product display page
-Given User launchs chrome browser
-When  User enter existing product name "iMac" into search textfield
-And   User click on the button having search icon 
-Then  Searched product "iMac" should be displayed in the search results page
-And   User click on "iMac" link of product from search results page  
-Then  User should be taken to product dispaly page of the product
-And   User click on main bigger sized thumbnail image displayed on product display page
-Then  Light box view of the main thumnail should be displayed on product display page
-When  User click on left and right options from main thumnail
-Then  User should be able to navigate to other thumnail image in light box view
-And   User click on close option from the thumnail displayed on light box
-Then  Light box view should close and focus should go to product display page
-When  User click on the normal sized thumbnail image displayed on product display page
-Then  Light box view of the selected thumbnail should be displayed on product display page
-When  User click on left and right options from selected thumnail
-Then  User should be able to navigate to other thumnail image in light box view
-And   User click on close option from the thumnail displayed on light box
-Then  Light box view should close and focus should go to product display page
-
-
-
 Scenario: Validate the product name, brand name and product code dispalyed on product display page
 Given User launchs chrome browser
 When  User enter existing product name "iMac" into search textfield
@@ -152,6 +130,26 @@ When  User click on the product "iMac" link from product compare page
 Then  User should be taken to product dispaly page of the product
 
 
+@dev
+Scenario: Validate the thumbnalis of the product displayed in product display page
+Given User launchs chrome browser
+When  User enter existing product name "iMac" into search textfield
+And   User click on the button having search icon 
+Then  Searched product "iMac" should be displayed in the search results page
+And   User click on "iMac" link of product from search results page  
+Then  User should be taken to product dispaly page of the product
+And   User click on main bigger sized thumbnail image displayed on product display page
+Then  Light box view of the main thumnail should be displayed on product display page
+When  User click on left and right options from main thumnail
+Then  User should be able to navigate to other thumnail image in light box view
+And   User click on close option from the thumnail displayed on light box
+Then  Light box view should close and focus should go to product display page
+When  User click on the normal sized thumbnail image displayed on product display page
+Then  Light box view of the selected thumbnail should be displayed on product display page
+When  User click on left and right options from selected thumnail
+Then  User should be able to navigate to other thumnail image in light box view
+And   User click on close option from the thumnail displayed on light box
+Then  Light box view should close and focus should go to product display page
 
 
 

@@ -110,7 +110,7 @@ When  User select'New Address'radio button and enter below details into textfiel
 |  city       |      Bangalore   |
 |  Postcode   |      560034      |
 |  Country    |      Turkey      |
-|  State      |      Angus       |
+|  State      |      5           |
 And   User click continue button of billing details tab
 Then  New tab of delivery details should display in checkoutpage
 When  User select'Existing Address'radio button and click continue button of delivery details tab
@@ -153,8 +153,8 @@ And   User enter following details into text field of billing details tab
 |  city       |      Bangalore   |
 |  Postcode   |      560034      |
 |  Country    |      Turkey      |
-|  State      |      Angus       |
-And   User click continue button of billing details tab
+|  State      |      6           |
+And   User click guest continue button of billing details tab
 Then  New tab of delivery method should display in checkoutpage
 When  User click on continue button of delivery method tab 
 Then  New tab of payment method should display in checkoutpage
@@ -164,7 +164,6 @@ Then  New tab of confirm order should display in checkoutpage
 When  User click on confirm order button of confirm order tab 
 Then  User should be taken to orderhasbeenplaced page 
 Then  Order success'Your order has been successfully processed!'text should display in orderhasbeenplaced page 
-
 
 
 
@@ -195,7 +194,7 @@ And   User enter following details into text field of account and billing detail
 |  city       |      Bangalore   |
 |  Postcode   |      560034      |
 |  Country    |      Turkey      |
-|  State      |      Angus       |
+|  State      |      8           |
 And   User select'Privacy Policy'checkbox and click on continue button of account and billing details tab
 Then  New tab of delivery details should display in checkoutpage
 When  User select'Existing Address'radio button and click continue button of delivery details tab

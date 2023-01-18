@@ -32,18 +32,9 @@ public class Homepage {
 
 	@FindBy(xpath = "//a[@title='My Account']")
 	private WebElement myaccount;
-
-	@FindBy(linkText = "Register")
-	private WebElement register;
-
-	@FindBy(linkText = "Login")
-	private WebElement login;
-
-	@FindBy(linkText = "Your Store")
-	private WebElement yourstorelogo;
-
-	@FindBy(linkText = "Logout")
-	private WebElement logoutoption;
+	
+	@FindBy(linkText = "Returns")
+	private WebElement returnslink;
 
 	@FindBy(name = "search")
 	private WebElement searchtxtfld;
@@ -77,6 +68,18 @@ public class Homepage {
 
 	@FindBy(linkText = "product comparison")
 	private WebElement prdtcomplink;
+	
+	@FindBy(linkText = "Register")
+	private WebElement register;
+
+	@FindBy(linkText = "Login")
+	private WebElement login;
+
+	@FindBy(linkText = "Your Store")
+	private WebElement yourstorelogo;
+
+	@FindBy(linkText = "Logout")
+	private WebElement logoutoption;
 
 	@FindBy(xpath = "//*[@id='top-links']/ul/li[4]/a")
 	private WebElement clickonshopcart;
@@ -233,6 +236,12 @@ public class Homepage {
 
 		pc0link.click();
 		return (new PCpage(ldriver));
+	}
+	
+	public Productreturnpage clickOnReturnsLink() {
+
+		ReadJavascriptExecutor.clickElementByJavaScript(returnslink, ldriver);
+		return (new Productreturnpage(ldriver));
 	}
 
 	public Shoppingcartpage clickOnShopCartHeaderLink() {

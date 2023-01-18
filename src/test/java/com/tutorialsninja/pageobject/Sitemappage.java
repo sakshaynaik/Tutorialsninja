@@ -1,20 +1,26 @@
 package com.tutorialsninja.pageobject;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.tutorialsninja.utilities.ElementUtils;
 import com.tutorialsninja.utilities.ReadAction;
+import com.tutorialsninja.utilities.ReadJavascriptExecutor;
 
 public class Sitemappage {
 
 	WebDriver ldriver;
+	ElementUtils element;
 
 	public Sitemappage(WebDriver rdriver) {
 
 		ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);
+		element = new ElementUtils(rdriver);
 	}
 
 	@FindBy(linkText = "Search")
@@ -34,12 +40,34 @@ public class Sitemappage {
 
 	@FindBy(linkText = "Special Offers")
 	private WebElement specialoffer;
-	
+
 	@FindBy(linkText = "Shopping Cart")
 	private WebElement shopacrtlink;
 
+	@FindBy(linkText = "My Account")
+	private WebElement myaccountlink;
+
+	@FindBy(xpath = "//div[@id='content']//a")
+	private List<WebElement> listlinkonsitemap;
+
 	///////////////////////////////////////////////////////
-	
+
+	public boolean isDisplayedDynamicLinksOnSiteMapPage(String txt) {
+
+		return (element.isDisplayedDynamicElement(listlinkonsitemap, txt));
+	}
+
+	public void clickOnDynamicLinksOnSiteMapPage(String txt) {
+
+		element.clickOnDynamicElement(listlinkonsitemap, txt);
+	}
+
+	public Accountpage clickOnMyAccountLink() {
+
+		ReadJavascriptExecutor.clickElementByJavaScript(myaccountlink, ldriver);
+		return (new Accountpage(ldriver));
+	}
+
 	public Shoppingcartpage clickOnShoppingcartLink() {
 
 		shopacrtlink.click();

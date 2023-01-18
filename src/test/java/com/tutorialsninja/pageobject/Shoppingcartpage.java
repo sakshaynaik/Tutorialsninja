@@ -30,6 +30,9 @@ public class Shoppingcartpage {
 
 	@FindBy(xpath = "//*[@id='cart']/button")
 	private WebElement blackcartbutton;
+	
+	@FindBy(xpath = "//strong[normalize-space()='Checkout']")
+	private WebElement checkoutlink;
 
 	@FindBy(xpath = "//button[@title='Remove']")
 	private WebElement remveXbutton;
@@ -362,6 +365,12 @@ public class Shoppingcartpage {
 	public void clickOnRemoveXButton() {
 
 		remveXbutton.click();
+	}
+	
+	public Checkoutpage clickOnCartBlackBoxCheckoutlink() {
+
+		checkoutlink.click();
+		return (new Checkoutpage(ldriver));
 	}
 
 	public void clickOnCartBlackBoxButton() {

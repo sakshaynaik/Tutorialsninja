@@ -141,7 +141,7 @@ public class ElementUtils {
 			return false;
 		}
 	}
-	
+
 	public int getSize(List<WebElement> element) {
 
 		return (element.size());
@@ -508,7 +508,7 @@ public class ElementUtils {
 		for (WebElement element : elements) {
 
 			if (element.getText().equals(text)) {
-				element.click();
+				ReadJavascriptExecutor.clickElementByJavaScript(element, ldriver);
 				break;
 			}
 		}
