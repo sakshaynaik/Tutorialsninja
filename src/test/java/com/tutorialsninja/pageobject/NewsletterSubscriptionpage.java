@@ -24,7 +24,16 @@ public class NewsletterSubscriptionpage {
 	@FindBy(xpath = "//input[@value='Continue']")
 	private WebElement continuebttn;
 	
+	@FindBy(xpath = "//a[normalize-space()='Back']")
+	private WebElement backbttn;
+	
 	//////////////////////////////////////////////////
+	
+	public Accountpage clickOnBackButton() {
+
+		backbttn.click();
+		return (new Accountpage(ldriver));
+	}
 	
 	public Accountpage clickOnContinueButton() {
 

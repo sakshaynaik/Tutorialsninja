@@ -20,9 +20,22 @@ public class Rewardspointpage {
 
 	@FindBy(linkText = "Order History")
 	private WebElement orderhistorylink;
-	
+
+	@FindBy(xpath = "//div[@id='account-reward']//p[1]")
+	private WebElement gettxtmsg;
+
 	///////////////////////////////////////////////////////////////////////////////////
-	
+
+	public String getTextRewardsTextMsg() {
+
+		return (gettxtmsg.getText());
+	}
+
+	public boolean isDisplayedRewardsTextMsg() {
+
+		return (gettxtmsg.isDisplayed());
+	}
+
 	public Orderhistorypage clickOnOrderHistoryLink() {
 
 		orderhistorylink.click();

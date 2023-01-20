@@ -32,7 +32,7 @@ public class Homepage {
 
 	@FindBy(xpath = "//a[@title='My Account']")
 	private WebElement myaccount;
-	
+
 	@FindBy(linkText = "Returns")
 	private WebElement returnslink;
 
@@ -68,7 +68,7 @@ public class Homepage {
 
 	@FindBy(linkText = "product comparison")
 	private WebElement prdtcomplink;
-	
+
 	@FindBy(linkText = "Register")
 	private WebElement register;
 
@@ -126,8 +126,17 @@ public class Homepage {
 	@FindBy(linkText = "Privacy Policy")
 	private WebElement privercypolicylink;
 
+	@FindBy(linkText = "Newsletter")
+	private WebElement newsletterlink;
+	
+	@FindBy(linkText = "Transactions")
+	private WebElement transactionlink;
+
 	@FindBy(linkText = "Terms & Conditions")
 	private WebElement termandcondlink;
+	
+	@FindBy(xpath = "//ul[@class='dropdown-menu dropdown-menu-right']/li")
+	private List<WebElement> listwebelemntlink;
 
 	@FindBy(xpath = "//nav[@id='top']//ul[@class='list-inline']/li/a")
 	private List<WebElement> headrandomtoplinks;
@@ -146,12 +155,12 @@ public class Homepage {
 
 	@FindBy(xpath = "//footer//div[@class='row']/div[4]//li")
 	private List<WebElement> footermyaccountlink;
-	
+
 	@FindBy(xpath = "//div[@id='content']//div[@class='row']/div//h4/a")
 	private List<WebElement> dynamicprdtlink;
 
 	//////////////////////////////////////////////////////////////////
-	
+
 	public void clickOnDynamicProductLink(String txt) {
 
 		element.clickOnDynamicElement(dynamicprdtlink, txt);
@@ -190,11 +199,36 @@ public class Homepage {
 			}
 		}
 	}
+	
+	public void clickOnDynamicLinkInMyAccountMenu(String link) {
+
+		element.clickOnDynamicElement(listwebelemntlink, link);
+	}
 
 	public Specialofferspage clickOnSpecialsLink() {
 
 		specialslink.click();
 		return (new Specialofferspage(ldriver));
+	}
+	
+	public void switchToWindowForWishlistaction() {
+
+		Actions action = new Actions(ldriver);
+		action.keyDown(Keys.CONTROL).click(wishlisheaderlink).keyUp(Keys.CONTROL).build().perform();
+
+		ReadAction.switchToNewWindow(ldriver);
+
+		/*
+		 * Set<String> twowindow = ldriver.getWindowHandles();
+		 * 
+		 * for (String windowid : twowindow) {
+		 * 
+		 * ldriver.switchTo().window(windowid);
+		 * 
+		 * if (ldriver.getTitle().equalsIgnoreCase("Account Login")) {
+		 * 
+		 * break; } }
+		 */
 	}
 
 	public Giftcertificatepage clickOnGiftCertificateLink() {
@@ -238,6 +272,12 @@ public class Homepage {
 		return (new PCpage(ldriver));
 	}
 	
+	public NewsletterSubscriptionpage clickOnFooterNewsLetterLink() {
+
+		newsletterlink.click();
+		return (new NewsletterSubscriptionpage(ldriver));
+	}
+
 	public Productreturnpage clickOnReturnsLink() {
 
 		ReadJavascriptExecutor.clickElementByJavaScript(returnslink, ldriver);
@@ -248,26 +288,6 @@ public class Homepage {
 
 		ReadJavascriptExecutor.clickElementByJavaScript(shopcartheaderlink, ldriver);
 		return (new Shoppingcartpage(ldriver));
-	}
-
-	public void switchToWindowForWishlistaction() {
-
-		Actions action = new Actions(ldriver);
-		action.keyDown(Keys.CONTROL).click(wishlisheaderlink).keyUp(Keys.CONTROL).build().perform();
-
-		ReadAction.switchToNewWindow(ldriver);
-
-		/*
-		 * Set<String> twowindow = ldriver.getWindowHandles();
-		 * 
-		 * for (String windowid : twowindow) {
-		 * 
-		 * ldriver.switchTo().window(windowid);
-		 * 
-		 * if (ldriver.getTitle().equalsIgnoreCase("Account Login")) {
-		 * 
-		 * break; } }
-		 */
 	}
 
 	public Wishlistpage clickOnWishlistHeaderLink() {
@@ -399,6 +419,12 @@ public class Homepage {
 	public void clickOnCompareProductButton() {
 
 		compareprdtbttn.click();
+	}
+
+	public Transactionhistorypage clickOnTransactionLinkInMyAccountMenu() {
+
+		transactionlink.click();
+		return (new Transactionhistorypage(ldriver));
 	}
 
 	public Desktoppage clickOnShowAllOptions() {

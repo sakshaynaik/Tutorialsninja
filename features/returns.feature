@@ -1,8 +1,7 @@
 
 
-
-Feature: ProductReturns Functionality
-Validate the working of product returns functionality
+Feature: Returns Functionality
+Validate the working of returns functionality
 
 
 Scenario: Verify navigation to product returns page from myaccount page
@@ -16,6 +15,14 @@ And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 When  User click on "View your return requests" link on account page
 Then  User should be taken to productreturns page 
+
+
+Scenario: Verify navigation to product returns page before logging-into application
+Given User launchs chrome browser
+When  User click on returns option from footer section
+Then  User should be taken to productreturns page
+When  User click on continue button of productreturns page
+Then  Field level warn message should be displayed in productreturns page
 
 
 Scenario: Verify navigation to product returns page from right column options
@@ -88,6 +95,4 @@ Then  User should be taken to productreturns page
 
 
 
-
-
-
+ 

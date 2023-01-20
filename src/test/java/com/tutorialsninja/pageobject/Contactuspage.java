@@ -7,8 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.utilities.ReadAction;
 
-
-
 public class Contactuspage {
 
 	WebDriver ldriver;
@@ -37,7 +35,29 @@ public class Contactuspage {
 	@FindBy(xpath = "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
 	private WebElement invalidemailmsg;
 
+	@FindBy(xpath = "//a[normalize-space()='Continue']")
+	private WebElement clickcontinuebttn;
+
+	@FindBy(xpath = "//div[contains(text(),'Enquiry must be between 10 and 3000 characters!')]")
+	private WebElement invalidenqrymsg;
+	
 	///////////////////////////////////////////////////////////////////////
+	
+	public String getInvalidEnquiryMsg() {
+
+		return (invalidenqrymsg.getText());
+	}
+
+	public boolean isDisplayedInvalidEnquiryMsg() {
+
+		return (invalidenqrymsg.isDisplayed());
+	}
+
+	public Homepage clickOnContinueButton() {
+
+		clickcontinuebttn.click();
+		return (new Homepage(ldriver));
+	}
 
 	public String getInvalidEmailMsg() {
 

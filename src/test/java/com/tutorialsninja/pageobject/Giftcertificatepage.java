@@ -45,8 +45,14 @@ public class Giftcertificatepage {
 	@FindBy(name = "agree")
 	private WebElement agreecheckbox;
 	
+	@FindBy(xpath = "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
+	private WebElement emailinvalidmsg;
+	
 	@FindBy(xpath = "//input[@value='Continue']")
 	private WebElement continuebttn;
+	
+	@FindBy(xpath = "//a[normalize-space()='Continue']")
+	private WebElement successcontinuebttn;
 	
 	@FindBy(xpath = "//p[contains(text(),'Thank you for purchasing a gift certificate!')]")
 	private WebElement purchasegiftmsg;
@@ -58,6 +64,21 @@ public class Giftcertificatepage {
 	private WebElement invalidamntmsg;
 
 	//////////////////////////////////////////////////////////////////////////
+	
+	public void clickOnContinueButtonFromSuccessGiftPage() {
+
+		successcontinuebttn.click();
+	}
+	
+	public String getInvalidEmailMsg() {
+
+		return (emailinvalidmsg.getText());
+	}
+	
+	public boolean isDisplayedInvalidEmailMsg() {
+
+		return (emailinvalidmsg.isDisplayed());
+	}
 	
 	public String getInvalidAmountMsg() {
 
