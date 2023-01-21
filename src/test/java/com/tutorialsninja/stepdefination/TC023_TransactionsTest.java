@@ -19,6 +19,7 @@ public class TC023_TransactionsTest extends BaseClass {
 		transactionhistorypage = new Transactionhistorypage(driver);
 		Assert.assertEquals(transactionhistorypage.getTransactionHistoryPageTitle(),
 				transactionhistorypage.getTransactionHistoryPageTitle());
+		Assert.assertTrue(transactionhistorypage.isDisplayedTransactionOnBreadCrum());
 	}
 
 	@When("User click on myaccount dropmenu and select {string} option")

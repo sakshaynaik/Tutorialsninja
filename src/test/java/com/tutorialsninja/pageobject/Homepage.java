@@ -380,6 +380,11 @@ public class Homepage {
 		return (new Homepage(ldriver));
 
 	}
+	
+	public boolean isDisplayedYourStoreLogo() {
+		
+		return (yourstorelogo.isDisplayed());
+	}
 
 	public Wishlistpage clickOnWishlistLink() {
 

@@ -22,11 +22,11 @@ import io.cucumber.java.en.When;
 
 public class TC001_RegistrationTest extends BaseClass {
 
-	 Homepage homepage;
-	 Loginpage loginpage;
-	 Registerationpage registerationpage;
-	 Successpage successpage;
-	 Accountpage accountpage;
+	Homepage homepage;
+	Loginpage loginpage;
+	Registerationpage registerationpage;
+	Successpage successpage;
+	Accountpage accountpage;
 
 	@Before
 	public void setUp() {
@@ -77,13 +77,14 @@ public class TC001_RegistrationTest extends BaseClass {
 
 		registerationpage = new Registerationpage(driver);
 		Assert.assertEquals(registerationpage.getRegPageTitle(), config.getRegisterationPageTitle());
+		Assert.assertTrue(registerationpage.isDisplayedRegisterOnBreadCrum());
 	}
 
 	@When("User enters below details into textfields")
 	public void user_enters_below_details_into_textfields(DataTable dataTable) {
 
 		registerationpage = new Registerationpage(driver);
-		
+
 		Map<String, String> hMap = dataTable.asMap(String.class, String.class);
 		registerationpage.enterFirstNameTextField(hMap.get("firstname"));
 		registerationpage.enterLastNameTextField(hMap.get("lastname"));
@@ -121,6 +122,8 @@ public class TC001_RegistrationTest extends BaseClass {
 
 		accountpage = new Accountpage(driver);
 		Assert.assertEquals(accountpage.getAccountPageTitle(), config.getAccountPageTitle());
+		Assert.assertTrue(accountpage.isDisplayedAccountLinkOnBedcrum());
+		Assert.assertTrue(accountpage.isDisplayedEditInfoLink());
 	}
 
 	@When("User clicks on yes radio option for newsletter selects privacypolicy checkbox and click on continue button")
@@ -161,9 +164,10 @@ public class TC001_RegistrationTest extends BaseClass {
 
 	@Then("User should be taken to account login page")
 	public void user_should_be_taken_to_account_login_page() {
-		
+
 		loginpage = new Loginpage(driver);
 		Assert.assertEquals(loginpage.getLoginPageTitle(), config.getLoginPageTitle());
+		Assert.assertTrue(loginpage.isDisplayedLoginOnBedCrum());
 	}
 
 	@Then("User click on continue button inside new customer box")
@@ -213,7 +217,8 @@ public class TC001_RegistrationTest extends BaseClass {
 	public void account_should_not_be_created_and_telephone_field_warning_message_should_be_displayed() {
 
 		registerationpage = new Registerationpage(driver);
-		Assert.assertEquals(registerationpage.getWarnTelephonemsg(), "Telephone number does not appear to be valid!");
+		Assert.fail(
+				"Warning Message Is Not Getting Displayed Instead An Account Is Getting Created With The Given Invalid Phone Number");
 	}
 
 	@When("User should not select privacypolicy checkbox and click on continue button")
@@ -241,9 +246,9 @@ public class TC001_RegistrationTest extends BaseClass {
 	@When("User enters below details into textfields with different password and confirm password fields")
 	public void user_enters_below_details_into_textfields_with_different_password_and_confirm_password_fields(
 			DataTable dataTable) {
-		
+
 		registerationpage = new Registerationpage(driver);
-		
+
 		Map<String, String> hMap = dataTable.asMap(String.class, String.class);
 		registerationpage.enterFirstNameTextField(hMap.get("firstname"));
 		registerationpage.enterLastNameTextField(hMap.get("lastname"));
@@ -258,7 +263,7 @@ public class TC001_RegistrationTest extends BaseClass {
 	public void user_enters_below_details_into_textfields_with_already_registered_email(DataTable dataTable) {
 
 		registerationpage = new Registerationpage(driver);
-		
+
 		Map<String, String> hMap = dataTable.asMap(String.class, String.class);
 		registerationpage.enterFirstNameTextField(hMap.get("firstname"));
 		registerationpage.enterLastNameTextField(hMap.get("lastname"));
@@ -272,7 +277,7 @@ public class TC001_RegistrationTest extends BaseClass {
 	public void user_enters_below_details_into_textfields_with_invalid_email(DataTable dataTable) {
 
 		registerationpage = new Registerationpage(driver);
-		
+
 		Map<String, String> hMap = dataTable.asMap(String.class, String.class);
 		registerationpage.enterFirstNameTextField(hMap.get("firstname"));
 		registerationpage.enterLastNameTextField(hMap.get("lastname"));
@@ -286,7 +291,7 @@ public class TC001_RegistrationTest extends BaseClass {
 	public void user_enters_below_details_into_textfields_with_invalid_phone_number(DataTable dataTable) {
 
 		registerationpage = new Registerationpage(driver);
-		
+
 		Map<String, String> hMap = dataTable.asMap(String.class, String.class);
 		registerationpage.enterFirstNameTextField(hMap.get("firstname"));
 		registerationpage.enterLastNameTextField(hMap.get("lastname"));
@@ -301,7 +306,7 @@ public class TC001_RegistrationTest extends BaseClass {
 			DataTable dataTable) {
 
 		registerationpage = new Registerationpage(driver);
-		
+
 		Map<String, String> hMap = dataTable.asMap(String.class, String.class);
 		registerationpage.enterFirstNameTextField(hMap.get("firstname"));
 		registerationpage.enterLastNameTextField(hMap.get("lastname"));
@@ -316,7 +321,7 @@ public class TC001_RegistrationTest extends BaseClass {
 			DataTable dataTable) {
 
 		registerationpage = new Registerationpage(driver);
-		
+
 		Map<String, String> hMap = dataTable.asMap(String.class, String.class);
 		registerationpage.enterFirstNameTextField(hMap.get("firstname"));
 		registerationpage.enterLastNameTextField(hMap.get("lastname"));

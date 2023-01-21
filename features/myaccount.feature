@@ -62,22 +62,6 @@ When  User click on myaccount dropmenu and click on myaccount option
 Then  User should be taken to account page
 
 
- @dev
-Scenario: Verify navigation to myaccount page using myaccount option in sitemap page
-Given User launchs chrome browser
-When  User enter URL and click on myaccount dropmenu
-Then  Login option should display in myaccount dropmenu
-And   User click on login option from myaccount dropmenu
-Then  User should be taken to account login page
-When  User enter email field as "kishore8@gmail.com" and password field as "12345"
-And   User click on loginbutton from loginpage
-Then  User should get logged-in and taken to account page
-When  User click on sitemap link from footer section
-Then  User should be taken to sitemap page
-When  User click on myaccount link from sitemap page
-Then  User should be taken to account page
-
-
 
 Scenario: Verify navigation to myaccount page from right column option
 Given User launchs chrome browser

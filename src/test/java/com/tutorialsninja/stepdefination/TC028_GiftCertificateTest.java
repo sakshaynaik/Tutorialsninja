@@ -30,6 +30,7 @@ public class TC028_GiftCertificateTest extends BaseClass {
 
 		giftcertificatepage = new Giftcertificatepage(driver);
 		Assert.assertEquals(giftcertificatepage.getGiftCertificatePageTitle(), config.getGiftCertificatePageTitle());
+		Assert.assertTrue(giftcertificatepage.isDisplayedGiftCertificateOnBedCrum());
 	}
 
 	@When("User enters mandatory details into fields of gift certificate page")

@@ -30,6 +30,7 @@ public class TC014_MyAccountInfoTest extends BaseClass {
 
 		myaccountpageinfo = new Myaccountinfopage(driver);
 		Assert.assertEquals(myaccountpageinfo.getMyAccountInfoPageTitle(), config.getMyAccountInfoPageTitle());
+		Assert.assertTrue(myaccountpageinfo.isDisplayedEditInfoLinkOnBreadCrum());
 	}
 
 	@When("User click on {string} link from right column options of account page")

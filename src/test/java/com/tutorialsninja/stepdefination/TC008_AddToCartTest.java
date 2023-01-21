@@ -54,13 +54,6 @@ public class TC008_AddToCartTest extends BaseClass {
 		productpage.clickOnWishListLink();
 	}
 
-	@Then("User click on add to cart button from wishlist page page")
-	public void user_click_on_add_to_cart_button_from_wishlist_page_page() {
-		
-		wishlistpage = new Wishlistpage(driver);
-		wishlistpage.clickOnAddToCartButton();
-	}
-
 	@Then("Success message of'Product Added To Shopping cart'should display in wishlist page")
 	public void success_message_of_product_added_to_shopping_cart_should_display_in_wishlist_page() {
 		

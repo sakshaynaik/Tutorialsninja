@@ -36,6 +36,7 @@ When  User click on continue button from account logout page
 Then  User should be taken to homepage
 
 
+
 Scenario: Verify logging out and browsing back
 Given User launchs chrome browser
 When  User enter URL and click on myaccount dropmenu
@@ -70,7 +71,7 @@ And   User click on loginbutton from loginpage
 Then  User should get logged-in and taken to account page
 
 
-@Test
+
 Scenario: Verify logout is not displayed before logging-in
 Given User launchs chrome browser
 When  User enter URL and click on myaccount dropmenu

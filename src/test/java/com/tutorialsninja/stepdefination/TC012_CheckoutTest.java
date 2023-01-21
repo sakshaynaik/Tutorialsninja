@@ -112,7 +112,7 @@ public class TC012_CheckoutTest extends BaseClass {
 		Map<String, String> hMap = dataTable.asMap(String.class, String.class);
 		checkoutpage.enterFirstName(hMap.get("Firstname"));
 		checkoutpage.enterLastName(hMap.get("Lastname"));
-		checkoutpage.enterEmailForPayment(hMap.get("Email"));
+		checkoutpage.enterEmailForPayment(getRandomStringValue(3) + "@gmail.com");
 		checkoutpage.enterPasswordInTextField(hMap.get("password"));
 		checkoutpage.enterConfirmPasswordInTextField(hMap.get("conpasswd"));
 		checkoutpage.enterTelephoneForPayment(hMap.get("Telephone"));

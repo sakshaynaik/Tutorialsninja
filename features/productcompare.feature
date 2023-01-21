@@ -130,7 +130,7 @@ When  User click on "iMac" link of product from success message of product dispa
 Then  User should be taken to product dispaly page of the product
 
 
-@dev
+
 Scenario: Verify the product comparision page when two products are added for comparision
 When  User enter existing product name "iMac" into search textfield
 And   User click on the button having search icon 

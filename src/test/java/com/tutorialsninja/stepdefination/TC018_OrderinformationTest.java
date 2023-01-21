@@ -48,6 +48,7 @@ public class TC018_OrderinformationTest extends BaseClass {
 
 		productreturnpage = new Productreturnpage(driver);
 		Assert.assertEquals(productreturnpage.getProductReturnPageTitle(), config.getProductReturnPageTitle());
+		Assert.assertTrue(productreturnpage.isDisplayedProductReturnOnBreadCrum());
 	}
 
 	@When("User click on continue button of orderinformation page")

@@ -19,6 +19,7 @@ public class TC017_OrderhistoryTest extends BaseClass{
 	    
 		 orderhistorypage = new Orderhistorypage(driver);
 		 Assert.assertEquals(orderhistorypage.getOrderHistoryPageTitle(), config.getOrderHistoryPageTitle());
+		 Assert.assertTrue(orderhistorypage.isDisplayedOrderHistoryOnBreadCrum());
 	}
 
 	@When("User click on continue button of orderhistory page")
@@ -40,6 +41,7 @@ public class TC017_OrderhistoryTest extends BaseClass{
 	 
 		 orderinformationpage = new Orderinformationpage(driver);
 		 Assert.assertEquals(orderinformationpage.getOrderInfoPageTitle(), config.getOrderInfoPageTitle());
+		 Assert.assertTrue(orderinformationpage.isDisplayedOrderInfoOnBreadCrum());
 	}
 
 }

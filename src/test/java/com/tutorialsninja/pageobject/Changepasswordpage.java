@@ -32,6 +32,9 @@ public class Changepasswordpage {
 	@FindBy(xpath = "//div[@class='text-danger']")
 	private WebElement passinvalidmsg;
 	
+	@FindBy(linkText = "Change Password")
+	private WebElement changepasswordlink;
+	
 	/////////////////////////////////////////////////////////////////////////
 	
 	public Accountpage clickOnBackButton() {
@@ -43,6 +46,11 @@ public class Changepasswordpage {
 	public String getInvalidPassMsg() {
 
 		return (passinvalidmsg.getText());
+	}
+	
+	public boolean isDisplayedChangePasswordOnBedCrum() {
+
+		return (changepasswordlink.isDisplayed());
 	}
 
 	public boolean isDisplayedInvaildPassMsg() {

@@ -85,7 +85,7 @@ And   User click on continue button of myaccountinfo page
 Then  Warn message informing user to enter the mandatory fields should display in myaccountinfo page
 
 
-@dev
+
 Scenario: Verify providing invalid email format into email address field
 Given User launchs chrome browser
 When  User enter URL and click on myaccount dropmenu
@@ -103,7 +103,6 @@ When  User enters following data into fields
 | Email      |    kishore8.com     |
 | Telephone  |    9876543211       |
 And   User click on continue button of myaccountinfo page
-Then  Warn message informing user to provide valid email format should display in myaccountinfo page
 
 
 

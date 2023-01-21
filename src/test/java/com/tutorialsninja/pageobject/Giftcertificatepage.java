@@ -45,6 +45,9 @@ public class Giftcertificatepage {
 	@FindBy(name = "agree")
 	private WebElement agreecheckbox;
 	
+	@FindBy(linkText = "Gift Certificate")
+	private WebElement giftcertificatelink;
+	
 	@FindBy(xpath = "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
 	private WebElement emailinvalidmsg;
 	
@@ -88,6 +91,11 @@ public class Giftcertificatepage {
 	public boolean isDisplayedInvalidAmountMsg() {
 
 		return (invalidamntmsg.isDisplayed());
+	}
+	
+	public boolean isDisplayedGiftCertificateOnBedCrum() {
+
+		return (giftcertificatelink.isDisplayed());
 	}
 	
 	public Shoppingcartpage clickOnGiftCertMsgPgContinueButton() {

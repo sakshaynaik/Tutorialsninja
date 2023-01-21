@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.tutorialsninja.utilities.ReadAction;
 import com.tutorialsninja.utilities.ReadJavascriptExecutor;
 
 public class Checkoutpage {
@@ -97,6 +96,9 @@ public class Checkoutpage {
 
 	@FindBy(id = "button-register")
 	private WebElement continueregbttn;
+
+	@FindBy(linkText = "Checkout")
+	private WebElement checkoutlink;
 
 	@FindBy(xpath = "//label[normalize-space()='I want to use a new address']")
 	private WebElement newaddressbttn;
@@ -256,7 +258,13 @@ public class Checkoutpage {
 
 	public void selectZone(int in) {
 
-		ReadAction.selectByIndex(zoneoption, in);
+		try {
+			Select select = new Select(zoneoption);
+			select.selectByIndex(in);
+		} catch (StaleElementReferenceException e) {
+			Select select = new Select(zoneoption);
+			select.selectByIndex(in);
+		}
 	}
 
 	public void selectCountry(String txt) {
@@ -310,6 +318,11 @@ public class Checkoutpage {
 
 		firstname.clear();
 		firstname.sendKeys(fname);
+	}
+
+	public boolean isDisplayedCheckoutOnBedCrum() {
+
+		return (checkoutlink.isDisplayed());
 	}
 
 	public String getCheckoutPageTitle() {

@@ -19,6 +19,7 @@ public class TC016_AddressbookTest extends BaseClass {
 
 		addressbookpage = new Addressbookpage(driver);
 		Assert.assertEquals(addressbookpage.getAddressBookPageTitle(), config.getAddressBookPageTitle());
+		Assert.assertTrue(addressbookpage.isDisplayedAddressBookOnBedCrum());
 	}
 
 	@When("User click on edit button on Address Book Entries")

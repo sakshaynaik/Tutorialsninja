@@ -31,6 +31,7 @@ public class TC026_ContactUsTest extends BaseClass {
 
 		contactuspage = new Contactuspage(driver);
 		Assert.assertEquals(contactuspage.getContactUsPageTitle(), config.getContactUsPageTitle());
+		Assert.assertTrue(contactuspage.isDisplayedContactUsOnBedCrum());
 	}
 
 	@When("User click on contact us link from footer options")

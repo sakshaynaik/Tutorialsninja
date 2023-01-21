@@ -36,6 +36,7 @@ public class TC010_ShoppingCartTest extends BaseClass {
 
 		sitemappage = new Sitemappage(driver);
 		Assert.assertEquals(sitemappage.getSiteMapPageTitle(), config.getSiteMapPageTitle());
+		Assert.assertTrue(sitemappage.isDisplayedSiteMapOnBedCrum());
 	}
 
 	@When("User click on shopping cart link from sitemap page")
@@ -120,6 +121,7 @@ public class TC010_ShoppingCartTest extends BaseClass {
 		
 	    checkoutpage = new Checkoutpage(driver);
 		Assert.assertEquals(checkoutpage.getCheckoutPageTitle(), config.getCheckoutPageTitle());
+		Assert.assertTrue(checkoutpage.isDisplayedCheckoutOnBedCrum());
 	}
 
 	@When("User click on continueshopping button on shoppingcart page")

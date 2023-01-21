@@ -37,8 +37,16 @@ public class Orderinformationpage {
 
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
 	private WebElement continuebttn;
+	
+	@FindBy(linkText = "Order Information")
+	private WebElement orderinfolink;
 
 	///////////////////////////////////////////////////////////////////////
+	
+	public boolean isDisplayedOrderInfoOnBreadCrum() {
+
+		return (orderinfolink.isDisplayed());
+	}
 
 	public Orderhistorypage clickOnContinueButton() {
 

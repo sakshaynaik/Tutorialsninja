@@ -17,6 +17,7 @@ public class TC022_RewardPointsTest extends BaseClass{
 	    
 		rewardspointpage = new Rewardspointpage(driver);
 		Assert.assertEquals(rewardspointpage.getRewardsPointPageTitle(), config.getRewardsPointPageTitle());
+		Assert.assertTrue(rewardspointpage.isDisplayedRewardPointsOnBreadCrum());
 	}
 
 	@Then("Text {string} should display in rewardpoints page")

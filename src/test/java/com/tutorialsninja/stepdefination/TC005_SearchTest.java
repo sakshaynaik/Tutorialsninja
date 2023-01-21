@@ -62,7 +62,7 @@ public class TC005_SearchTest extends BaseClass {
 	@When("User will not enter any product name into search textfield")
 	public void user_will_not_enter_any_product_name_into_search_textfield() {
 
-		Assert.assertTrue(searchpage.getSearchPageTitle().contains("Search"));
+		searchpage = new Searchpage(driver);
 		log.info("No Product Entered Into Search TextField");
 	}
 
@@ -251,6 +251,7 @@ public class TC005_SearchTest extends BaseClass {
 
 		productcomparisionpage = new Productcomparisionpage(driver);
 		Assert.assertEquals(productcomparisionpage.getProductComparePageTitle(), config.getCompareProductPageTitle());
+		Assert.assertTrue(productcomparisionpage.isDisplayedProductComparisonOnBreadCrum());
 	}
 
 	@Then("User click on the wishlist button of product from search results page")

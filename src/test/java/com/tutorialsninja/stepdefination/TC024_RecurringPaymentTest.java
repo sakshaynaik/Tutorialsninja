@@ -16,6 +16,7 @@ public class TC024_RecurringPaymentTest extends BaseClass {
 
 		recurringpaymentpage = new Recurringpaymentpage(driver);
 		Assert.assertEquals(recurringpaymentpage.getRecurrigPaymentPageTitle(), config.getRecurringPaymentPageTitle());
+		Assert.assertTrue(recurringpaymentpage.isDisplayedRecurringPaymentOnBreadCrum());
 	}
 
 	@Then("Text {string} should display in recurring payment page")

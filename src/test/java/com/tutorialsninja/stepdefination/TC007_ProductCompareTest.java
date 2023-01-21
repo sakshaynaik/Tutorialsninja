@@ -143,10 +143,10 @@ public class TC007_ProductCompareTest extends BaseClass {
 	}
 
 	@Then("User click on the product {string} link from search results page")
-	public void user_click_on_the_product_link_from_search_results_page() {
+	public void user_click_on_the_product_link_from_search_results_page(String string) {
 
 		searchpage = new Searchpage(driver);
-		searchpage.clickOnProductNameFromSuccessMsgHPLP();
+		searchpage.clickOnDynamicWebElement(string);
 	}
 
 	@Then("User should be taken to product comparision page and verify two products added for comparision")

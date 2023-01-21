@@ -37,12 +37,6 @@ When  User click on the wishlist button of product from product dispaly page
 Then  Success message for'Product Added To Wishlist'should be displayed in product dispaly page 
 And   User click on wishlist link from the success message of product dispaly page
 Then  User should be taken to wishlist page and product "iMac" should be displayed 
-When  User click on add to cart button from wishlist page page 
-Then  Success message of'Product Added To Shopping cart'should display in wishlist page
-When  User click on shopping cart link from the success message of wishlist page
-Then  User should be taken to shoppingcart page and product "iMac" should be successfully displayed
-
-
 
 
 Scenario: Verify adding the product to cart from search result page

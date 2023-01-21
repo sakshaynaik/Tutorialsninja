@@ -46,6 +46,9 @@ public class Sitemappage {
 
 	@FindBy(linkText = "My Account")
 	private WebElement myaccountlink;
+	
+	@FindBy(linkText = "Site Map")
+	private WebElement sitemaplink;
 
 	@FindBy(xpath = "//div[@id='content']//a")
 	private List<WebElement> listlinkonsitemap;
@@ -78,6 +81,11 @@ public class Sitemappage {
 
 		specialoffer.click();
 		return (new Specialofferspage(ldriver));
+	}
+	
+	public boolean isDisplayedSiteMapOnBedCrum() {
+		
+		return (sitemaplink.isDisplayed());
 	}
 
 	public Rewardspointpage clickOnRewardPointsLink() {

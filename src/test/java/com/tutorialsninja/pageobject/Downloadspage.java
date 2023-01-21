@@ -21,6 +21,9 @@ public class Downloadspage {
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
 	private WebElement continuebttn;
 
+	@FindBy(linkText = "Downloads")
+	private WebElement downloadslink;
+	
 	//////////////////////////////////////////////////////////////////
 
 	public Accountpage clickOncontinuebutton() {
@@ -28,11 +31,18 @@ public class Downloadspage {
 		continuebttn.click();
 		return (new Accountpage(ldriver));
 	}
+	
+
+	public boolean isDisplayedDownloadsOnBedCrum() {
+
+		return (downloadslink.isDisplayed());
+	}
 
 	public String gettxtOnDownloadsPage() {
 
 		return (downmsg.getText());
 	}
+	
 
 	public boolean isDisplayedtxtOnDownloadsPage() {
 

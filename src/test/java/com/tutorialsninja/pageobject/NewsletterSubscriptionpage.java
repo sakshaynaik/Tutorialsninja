@@ -27,12 +27,20 @@ public class NewsletterSubscriptionpage {
 	@FindBy(xpath = "//a[normalize-space()='Back']")
 	private WebElement backbttn;
 	
+	@FindBy(linkText = "Newsletter")
+	private WebElement newsletterlink;
+	
 	//////////////////////////////////////////////////
 	
 	public Accountpage clickOnBackButton() {
 
 		backbttn.click();
 		return (new Accountpage(ldriver));
+	}
+	
+	public boolean isDisplayedNewsLetterOnBreadCrum() {
+
+		return (newsletterlink.isDisplayed());
 	}
 	
 	public Accountpage clickOnContinueButton() {

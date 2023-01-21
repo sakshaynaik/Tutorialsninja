@@ -20,11 +20,19 @@ public class Rewardspointpage {
 
 	@FindBy(linkText = "Order History")
 	private WebElement orderhistorylink;
+	
+	@FindBy(linkText = "Reward Points")
+	private WebElement rewardpointslink;
 
 	@FindBy(xpath = "//div[@id='account-reward']//p[1]")
 	private WebElement gettxtmsg;
 
 	///////////////////////////////////////////////////////////////////////////////////
+	
+	public boolean isDisplayedRewardPointsOnBreadCrum() {
+
+		return (rewardpointslink.isDisplayed());
+	}
 
 	public String getTextRewardsTextMsg() {
 

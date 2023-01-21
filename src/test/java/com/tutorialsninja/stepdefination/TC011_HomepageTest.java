@@ -119,6 +119,7 @@ public class TC011_HomepageTest extends BaseClass {
 	   
 		orderplacedpage = new Orderplacedpage(driver);
 		Assert.assertEquals(orderplacedpage.getOrderplacedPageTitle(), config.getOrderPlacedPageTitle());
+		Assert.assertTrue(orderplacedpage.isDisplayedSuccessOnBedcrum());
 	}
 
 	@Then("Order success'Your order has been successfully processed!'text should display in orderhasbeenplaced page")

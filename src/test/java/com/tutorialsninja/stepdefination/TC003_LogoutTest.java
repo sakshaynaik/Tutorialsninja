@@ -29,7 +29,7 @@ public class TC003_LogoutTest extends BaseClass {
 
 		accountlogoutpage = new Accountlogoutpage(driver);
 		Assert.assertEquals(accountlogoutpage.getAccountLogoutPageTitle(), config.getAccountLogoutPageTitle());
-		
+
 		accountpage = new Accountpage(driver);
 		accountpage.clickOnMyAccountDropMenu();
 		Assert.assertTrue(accountpage.isDisplayedLoginOption());
@@ -47,6 +47,7 @@ public class TC003_LogoutTest extends BaseClass {
 
 		homepage = new Homepage(driver);
 		Assert.assertEquals(homepage.getHomePageTitle(), config.getHomePageTitle());
+		Assert.assertTrue(homepage.isDisplayedYourStoreLogo());
 	}
 
 	@Then("User click on logout option from the right column")
@@ -61,7 +62,7 @@ public class TC003_LogoutTest extends BaseClass {
 
 		accountlogoutpage = new Accountlogoutpage(driver);
 		Assert.assertEquals(accountlogoutpage.getAccountLogoutPageTitle(), config.getAccountLogoutPageTitle());
-		
+
 		accountpage = new Accountpage(driver);
 		Assert.assertTrue(accountpage.isDisplayedLoginOption());
 	}
@@ -70,6 +71,7 @@ public class TC003_LogoutTest extends BaseClass {
 	public void user_should_not_get_logged_in() {
 
 		accountpage = new Accountpage(driver);
+		accountpage.refreshByJavascript();
 		Assert.assertTrue(accountpage.isDisplayedLoginOption());
 	}
 

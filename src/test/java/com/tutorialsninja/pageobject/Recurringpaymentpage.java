@@ -18,6 +18,9 @@ public class Recurringpaymentpage {
 	@FindBy(linkText = "Continue")
 	private WebElement continuebttn;
 
+	@FindBy(linkText = "Recurring Payments")
+	private WebElement recurringpaymentslink;
+	
 	@FindBy(xpath = "//p[normalize-space()='No recurring payments found!']")
 	private WebElement recurrngmsg;
 
@@ -26,6 +29,11 @@ public class Recurringpaymentpage {
 	public String getRecurringPaymentMsg() {
 
 		return (recurrngmsg.getText());
+	}
+	
+	public boolean isDisplayedRecurringPaymentOnBreadCrum() {
+
+		return (recurringpaymentslink.isDisplayed());
 	}
 
 	public boolean isDisplayedRecurringPaymentMsg() {

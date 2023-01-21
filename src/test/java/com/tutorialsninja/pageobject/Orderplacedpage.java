@@ -30,6 +30,9 @@ public class Orderplacedpage {
 	@FindBy(linkText = "store owner")
 	private WebElement storeownerlink;
 
+	@FindBy(linkText = "Success")
+	private WebElement successlink;
+	
 	/////////////////////////////////////////////////////////////////
 
 	public Contactuspage clickOnStoreOwnerLink() {
@@ -74,5 +77,5 @@ public class Orderplacedpage {
 
 		return (ordrplacmsg.isDisplayed());
 	}
-
+	
 }

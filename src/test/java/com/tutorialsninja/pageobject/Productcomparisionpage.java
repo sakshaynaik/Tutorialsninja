@@ -39,6 +39,9 @@ public class Productcomparisionpage {
 	@FindBy(linkText = "HP LP3065")
 	private WebElement hplp3065;
 
+	@FindBy(linkText = "Product Comparison")
+	private WebElement productcomparisonlink;
+	
 	@FindBy(linkText = "Canon EOS 5D")
 	private WebElement prdtimg;
 
@@ -252,6 +255,11 @@ public class Productcomparisionpage {
 	public boolean isDisplayedRemoveButton() {
 
 		return (remove.isDisplayed());
+	}
+	
+	public boolean isDisplayedProductComparisonOnBreadCrum() {
+
+		return (productcomparisonlink.isDisplayed());
 	}
 
 	public void clickRemoveButton() {

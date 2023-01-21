@@ -25,6 +25,7 @@ public class TC027_SpecialOffersTest extends BaseClass {
 	    
 		 specialofferspage = new Specialofferspage(driver);
 		 Assert.assertEquals(specialofferspage.getSpecialOffersPageTitle(), config.getSpecialOffersPageTitle());
+		 Assert.assertTrue(specialofferspage.isDisplayedSpecialOffersOnBreadCrum());
 	}
 
 	@Then("Product {string} should display in specialoffers page")

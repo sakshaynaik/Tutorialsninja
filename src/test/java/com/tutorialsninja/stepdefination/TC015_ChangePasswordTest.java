@@ -22,6 +22,7 @@ public class TC015_ChangePasswordTest extends BaseClass {
 
 		changepasswordpage = new Changepasswordpage(driver);
 		Assert.assertEquals(changepasswordpage.getChangePasswordPageTitle(), config.getChangePasswordPageTitle());
+		Assert.assertTrue(changepasswordpage.isDisplayedChangePasswordOnBedCrum());
 	}
 
 	@When("User enter old password {string} into old password field of changepassword page")

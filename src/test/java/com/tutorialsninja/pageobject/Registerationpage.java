@@ -377,6 +377,11 @@ public class Registerationpage {
 		return (new Successpage(ldriver));
 
 	}
+	
+	public boolean isDisplayedRegisterOnBreadCrum() {
+
+		return (registerlink.isDisplayed());
+	}
 
 	public String getRegPageTitle() {
 

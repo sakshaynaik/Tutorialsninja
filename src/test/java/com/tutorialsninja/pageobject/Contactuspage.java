@@ -28,6 +28,9 @@ public class Contactuspage {
 
 	@FindBy(id = "input-enquiry")
 	private WebElement enquiry;
+	
+	@FindBy(linkText = "Contact Us")
+	private WebElement contactuslink;
 
 	@FindBy(xpath = "//input[@value='Submit']")
 	private WebElement submittbttn;
@@ -93,6 +96,11 @@ public class Contactuspage {
 	public String getContactUsPanelBody() {
 
 		return (contactuspanelbody.getText());
+	}
+	
+	public boolean isDisplayedContactUsOnBedCrum() {
+
+		return (contactuslink.isDisplayed());
 	}
 
 	public boolean isDisplayedContactUsPanelBody() {

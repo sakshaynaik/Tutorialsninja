@@ -18,6 +18,9 @@ public class Orderhistorypage {
 		PageFactory.initElements(rdriver, this);
 	}
 
+	@FindBy(linkText = "Order History")
+	private WebElement orderhistorylink;
+	
 	@FindBy(xpath = "//tbody/tr[1]/td[7]/a[1]")
 	private WebElement vieworderinfo;
 
@@ -26,8 +29,14 @@ public class Orderhistorypage {
 
 	@FindBy(xpath = "//*[@id='content']/div[1]/table/tbody/tr[1]/td[4]")
 	private WebElement statusofprdt;
+	
 
 	///////////////////////////////////////////////////////////////////////////////////////
+	
+	public boolean isDisplayedOrderHistoryOnBreadCrum() {
+
+		return (orderhistorylink.isDisplayed());
+	}
 
 	public void drawBorderForStatusOfProduct() {
 

@@ -11,8 +11,7 @@ import io.cucumber.junit.CucumberOptions;
                  glue = "com.tutorialsninja.stepdefination",
                	 publish=true,
                  dryRun = false,
-                 monochrome = true,
-                 tags = "@all")      
+                 monochrome = true)      
 public class Run {
 
 }

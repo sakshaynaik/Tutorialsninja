@@ -1,13 +1,13 @@
 package com.tutorialsninja.pageobject;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.utilities.ReadAction;
-
-
+import com.tutorialsninja.utilities.ReadJavascriptExecutor;
 
 public class Addressbookpage {
 
@@ -24,7 +24,7 @@ public class Addressbookpage {
 
 	@FindBy(xpath = "//tbody/tr[2]/td[2]/a[2]")
 	private WebElement deletenewaddress;
-	
+
 	@FindBy(linkText = "Edit")
 	private WebElement editbttn;
 
@@ -64,9 +64,12 @@ public class Addressbookpage {
 	@FindBy(id = "input-zone")
 	private WebElement selectzone;
 
+	@FindBy(linkText = "Address Book")
+	private WebElement addressbooklink;
+
 	@FindBy(xpath = "//input[@value='1']")
 	private WebElement defaltaddrssradiobttn;
-	
+
 	@FindBy(xpath = "input[value='0']")
 	private WebElement defaltaddrssradiobttnNo;
 
@@ -75,20 +78,20 @@ public class Addressbookpage {
 
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement addressupdtesuccmsg;
-	
+
 	@FindBy(xpath = "//div[text()=' Your address has been successfully deleted']")
 	private WebElement deletesuccmsg;
-	
+
 	@FindBy(xpath = "//div[text()=' Your address has been successfully added']")
 	private WebElement newaddresupdtemsg;
-	
+
 	////////////////////////////////////////////////////////////////////////////
-	
+
 	public void clickOnDefaltAddressRadioButtonNo() {
 
 		ReadAction.JSClick(ldriver, defaltaddrssradiobttnNo);
 	}
-	
+
 	public String getNewAddressBookSuccessMsg() {
 
 		return (ReadAction.getText(ldriver, newaddresupdtemsg));
@@ -98,7 +101,7 @@ public class Addressbookpage {
 
 		return (ReadAction.isDisplayed(ldriver, newaddresupdtemsg));
 	}
-	
+
 	public String getUpdateAddressDeleteSuccessMsg() {
 
 		return (ReadAction.getText(ldriver, deletesuccmsg));
@@ -108,7 +111,6 @@ public class Addressbookpage {
 
 		return (ReadAction.isDisplayed(ldriver, deletesuccmsg));
 	}
-	
 
 	public String getUpdateAddressBookSuccessMsg() {
 
@@ -119,10 +121,10 @@ public class Addressbookpage {
 
 		return (ReadAction.isDisplayed(ldriver, addressupdtesuccmsg));
 	}
-	
+
 	public void clickOnContinueButton() {
 
-		ReadAction.actionClick(ldriver, continuebttn);
+		ReadJavascriptExecutor.clickElementByJavaScript(continuebttn, ldriver);
 	}
 
 	public void clickOnDefaltAddressRadioButton() {
@@ -132,7 +134,11 @@ public class Addressbookpage {
 
 	public void selectByIndexZone(int num) {
 
-		ReadAction.selectByIndex(selectzone, num);
+		try {
+			ReadAction.selectByIndex(selectzone, num);
+		} catch (StaleElementReferenceException e) {
+			ReadAction.selectByIndex(selectzone, num);
+		}
 	}
 
 	public void selectByTextCountry(String contry) {
@@ -185,6 +191,11 @@ public class Addressbookpage {
 		return (ReadAction.isDisplayed(ldriver, deletwarnmsg));
 	}
 
+	public boolean isDisplayedAddressBookOnBedCrum() {
+
+		return (addressbooklink.isDisplayed());
+	}
+
 	public void clickOnBackButton() {
 
 		backbttn.click();
@@ -194,7 +205,7 @@ public class Addressbookpage {
 
 		newadresbtn.click();
 	}
-	
+
 	public void clickOnNewAddressDeleteButton() {
 
 		ReadAction.JSClick(ldriver, deletenewaddress);

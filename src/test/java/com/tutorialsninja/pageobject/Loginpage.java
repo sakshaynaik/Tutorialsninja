@@ -39,6 +39,9 @@ public class Loginpage {
 
 	@FindBy(linkText = "Forgotten Password")
 	private WebElement forgotpassword;
+	
+	@FindBy(linkText = "Login")
+	private WebElement loginlink;
 
 	@FindBy(xpath = "//*[@id='account-login']/ul")
 	private WebElement bedcrum;
@@ -97,6 +100,11 @@ public class Loginpage {
 	public String getUnsuccessfulAttemptMsgForLogin() {
 
 		return (unsucesfulmsg.getText());
+	}
+	
+	public boolean isDisplayedLoginOnBedCrum() {
+
+		return (loginlink.isDisplayed());
 	}
 
 	public boolean isDisplayedUnsuccessfulAttemptMsgForLogin() {

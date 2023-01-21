@@ -59,6 +59,9 @@ public class Productreturnpage {
 	@FindBy(xpath = "//div[.='E-Mail Address does not appear to be valid!']")
 	private WebElement invalidemailmsg;
 
+	@FindBy(linkText = "Product Returns")
+	private WebElement productreturnslink;
+	
 	@FindBy(id = "input-firstname")
 	private WebElement fname;
 
@@ -218,6 +221,11 @@ public class Productreturnpage {
 	public String getProductReturnMsg() {
 
 		return (prdreturnmag.getText());
+	}
+	
+	public boolean isDisplayedProductReturnOnBreadCrum() {
+
+		return (productreturnslink.isDisplayed());
 	}
 
 	public boolean isDisplayedProductReturnMsg() {

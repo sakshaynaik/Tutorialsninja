@@ -16,6 +16,7 @@ public class TC020_DownloadsTest extends BaseClass {
 
 		downloadspage = new Downloadspage(driver);
 		Assert.assertEquals(downloadspage.getDownloadsPageTitle(), config.getDownloadsPageTitle());
+		Assert.assertTrue(downloadspage.isDisplayedDownloadsOnBedCrum());
 	}
 
 	@Then("Proper text for no downloadable orders should be displayed in downloads page")

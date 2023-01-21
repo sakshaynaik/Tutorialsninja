@@ -28,6 +28,9 @@ public class Myaccountinfopage {
 
 	@FindBy(id = "input-telephone")
 	private WebElement newtelephone;
+	
+	@FindBy(linkText = "Edit Information")
+	private WebElement editinfolink;
 
 	@FindBy(xpath = "//a[normalize-space()='Back']")
 	private WebElement backbutton;
@@ -49,6 +52,11 @@ public class Myaccountinfopage {
 	public void drawBorderForTelephoneTextField() {
 
 		ReadJavascriptExecutor.drawBorder(newtelephone, ldriver);
+	}
+	
+	public boolean isDisplayedEditInfoLinkOnBreadCrum() {
+
+		return (editinfolink.isDisplayed());
 	}
 
 	public boolean isDisplayedInvalidFirstNameMsg() {

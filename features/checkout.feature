@@ -127,7 +127,6 @@ When  User click on continue button of orderhasbeenplaced page
 Then  User should be taken to homepage
 
 
-
 Scenario: Verify checkout as guest user
 Given User launchs chrome browser
 When  User enter existing product name "HP LP3065" into search textfield
@@ -164,6 +163,7 @@ Then  New tab of confirm order should display in checkoutpage
 When  User click on confirm order button of confirm order tab 
 Then  User should be taken to orderhasbeenplaced page 
 Then  Order success'Your order has been successfully processed!'text should display in orderhasbeenplaced page 
+
 
 
 

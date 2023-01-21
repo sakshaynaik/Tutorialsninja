@@ -20,6 +20,7 @@ public class TC025_NewsLetterTest extends BaseClass {
 
 		newslettersubscriptionpage = new NewsletterSubscriptionpage(driver);
 		Assert.assertEquals(newslettersubscriptionpage.getNewsletterPageTitle(), config.getNewsletterPageTitle());
+		Assert.assertTrue(newslettersubscriptionpage.isDisplayedNewsLetterOnBreadCrum());
 	}
 
 	@When("User click on {string} link from footer options")

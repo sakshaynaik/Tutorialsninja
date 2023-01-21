@@ -117,8 +117,7 @@ public class Wishlistpage {
 
 	public void clickOnAddToCartButton() {
 
-		addtocartbttn.click();
-
+		element.click(addtocartbttn);
 	}
 
 	public Accountpage clickOnContinueButton() {

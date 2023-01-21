@@ -32,6 +32,9 @@ public class Specialofferspage {
 	@FindBy(linkText = "product comparison")
 	private WebElement productcomparelink;
 
+	@FindBy(linkText = "Special Offers")
+	private WebElement specialofferslink;
+	
 	@FindBy(xpath = "//div[@class='button-group']/button[1]")
 	private WebElement addtocartbutton;
 
@@ -71,6 +74,11 @@ public class Specialofferspage {
 	public boolean isDisplayedCanonWebElement() {
 
 		return (element.isDisplayed());
+	}
+	
+	public boolean isDisplayedSpecialOffersOnBreadCrum() {
+
+		return (specialofferslink.isDisplayed());
 	}
 
 	public boolean isDisplayedDynamicWebElement(String text) {

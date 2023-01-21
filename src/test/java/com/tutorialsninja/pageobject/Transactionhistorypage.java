@@ -17,11 +17,19 @@ public class Transactionhistorypage {
 
 	@FindBy(linkText = "Continue")
 	private WebElement continuebttn;
+	
+	@FindBy(linkText = "Your Transactions")
+	private WebElement transactionlink;
 
 	@FindBy(xpath = "//div[@id='account-transaction']//p[1]")
 	private WebElement tansacmsg;
 
 	////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	public boolean isDisplayedTransactionOnBreadCrum() {
+
+		return (transactionlink.isDisplayed());
+	}
 
 	public String getBalanceInTHpage() {
 
