@@ -30,27 +30,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static SoftAssert asert;
 	public static Logger log = LogManager.getLogger(BaseClass.class.getName());
-
-	/*
-	 * public Accountlogoutpage accountlogoutpage; public Accountpage accountpage;
-	 * public Addressbookpage addressbookpage; public Changepasswordpage
-	 * changepasswordpage; public Checkoutpage checkoutpage; public Contactuspage
-	 * contactuspage; public Desktoppage desktoppage; public Downloadspage
-	 * downloadspage; public Forgotyourpasswordpage forgotyourpasswordpage; public
-	 * Giftcertificatepage giftcertificatepage; public Homepage homepage; public
-	 * Loginpage loginpage; public Myaccountinfopage myaccountinfopage; public
-	 * NewsletterSubscriptionpage newsletterSubscriptionpage; public
-	 * Orderhistorypage orderhistorypage; public Orderplacedpage Orderplacedpage;
-	 * public PCpage pcpage; public Productcomparisionpage productcomparisionpage;
-	 * public Productpage productpage; public Productreturnpage productreturnpage;
-	 * public Recurringpaymentpage recurringpaymentpage; public Registerationpage
-	 * registerationpage; public Returninformationpage returninformationpage; public
-	 * Rewardspointpage rewardspointpage; public Searchpage searchpage; public
-	 * Shoppingcartpage shoppingcartpage; public Sitemappage sitemappage; public
-	 * Specialofferspage specialofferspage; public Successpage successpage; public
-	 * Transactionhistorypage transactionhistorypage; public Wishlistpage
-	 * wishlistpage;
-	 */
+	
 
 	public void setBrowserAndNavigateToWebPage() {
 
